@@ -29,59 +29,40 @@ const CorseEducetion = () => {
             <div className="corse-education-card">
                 <div className="corse-education-card-content"> <h2 className="corse-education-card-title">{courseDetail?.title}
                 </h2>
-                    <p className="corse-education-desc">{courseDetail?.description}</p>
-
+                    <p className="corse-education-desc" dangerouslySetInnerHTML={{ __html: courseDetail?.description?.slice(0, 500) }}/>
                 </div>
 
             </div>
 
 
             <div className="corse-education-card card-in-container">
-                <div className="card-in-card mrt">
-                    <div className="card-in-card-img">
-                        <img src={img} alt="" />
-                    </div>
-                    <div className="card-in-card-content">
-                        <h1>Lorem</h1>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ipsum has been the industry's standard dummy text ever since the </p>
-                    </div>
+                {courseDetail.items?.map((item, index) => {
+                        if(index % 2 === 0){
+                            
+                            return (<div className="card-in-card mrt">
+                                <div className="card-in-card-img">
+                                    <img src={`https://api.softwarevillage.az${item?.image}`} alt="" />
+                                </div>
+                                <div className="card-in-card-content">
+                                    <h1>{item?.title}</h1>
+                                    <p>{item?.description}</p>
+                                </div>
 
 
-                </div>
+                            </div>)
+                        }else{
+                            return (<div className="card-in-card">
+                                <div className="card-in-card-img">
+                                    <img src={`https://api.softwarevillage.az${item?.image}`} alt="" />
+                                </div>
+                                <div className="card-in-card-content">
+                                    <h1>{item?.title}</h1>
+                                    <p>{item?.description}</p>
+                                </div>
 
-                <div className="card-in-card">
-                    <div className="card-in-card-img">
-                        <img src={img} alt="" />
-                    </div>
-                    <div className="card-in-card-content">
-                        <h1>Lorem</h1>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ipsum has been the industry's standard dummy text ever since the </p>
-                    </div>
-
-                </div>
-
-
-                <div className="card-in-card mrt">
-                    <div className="card-in-card-img">
-                        <img src={img} alt="" />
-                    </div>
-                    <div className="card-in-card-content">
-                        <h1>Lorem</h1>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ipsum has been the industry's standard dummy text ever since the </p>
-                    </div>
-
-
-                </div>
-                <div className="card-in-card">
-                    <div className="card-in-card-img">
-                        <img src={img} alt="" />
-                    </div>
-                    <div className="card-in-card-content">
-                        <h1>Lorem</h1>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ipsum has been the industry's standard dummy text ever since the </p>
-                    </div>
-
-                </div>
+                            </div>)
+                        }
+                    })}
 
             </div>
 

@@ -16,10 +16,10 @@ function Navbar() {
         <div className="header-for-nav">
             <nav ref={navRef} className="mmmmmm">
                 <Link onClick={() => showNavbar()} to="telimproqramlari"><a className="item-link">Təlim proqramları</a></Link>
-                <Link onClick={() => showNavbar()} to="about"><a className="item-link">Haqqımızda</a></Link>
-                <Link onClick={() => showNavbar()} to="quastion"><a className="item-link">Suallar</a></Link>
+                <Link onClick={() => showNavbar()} to="haqqimizda"><a className="item-link">Haqqımızda</a></Link>
+                <Link onClick={() => showNavbar()} to="suallar"><a className="item-link">Suallar</a></Link>
                 <Link onClick={() => showNavbar()} to="bloq"><a className="item-link">Bloq</a></Link>
-                <Link onClick={() => showNavbar()} to="contact"><a className="item-link">Əlaqə</a></Link>
+                <Link onClick={() => showNavbar()} to="elaqe"><a className="item-link">Əlaqə</a></Link>
 
                 <div className="search-buttons">
                     <div className="button-container">

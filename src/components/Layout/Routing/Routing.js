@@ -12,6 +12,7 @@ import About from '../../Pages/About/About';
 import NoPage from '../../Pages/NoPage/NoPage';
 import Corse from '../../Pages/Corses/Corse';
 import TelimProqramlari from '../../Pages/TelimProqramlari/TelimProqramlari';
+import TelimProqramlariMain from '../../Pages/TelimProqramlari/TelimProqramlariMain';
 import  BloqDetail from '../../Pages/BlogDetail/BloqDetail'
 
 const BASE_URL = 'https://api.softwarevillage.az/api/training-programs'
@@ -35,16 +36,17 @@ const Routing = () => {
         <>
             <Routes>
                 <Route path="/" element={<Home />}></Route>
-                <Route path="/about" element={<About />} />
-                <Route path="/telimproqramlari" element={<TelimProqramlari />} />
-                <Route path="contact" element={<Contact />} />
-                <Route path="bloq" element={<Blog />} />
+                <Route path="/haqqimizda" element={<About />} />
+                <Route path="/telimproqramlari" element={<TelimProqramlariMain />} />
+                <Route path="/telimproqramlari/:slug" element={<TelimProqramlari />} />
+                <Route path="/telimproqramlari/:slug/:slug" element={<Corse />} />
+                <Route path="/bloq" element={<Blog />} />
 
-                <Route path="bloq/:slug" element={<BloqDetail />} />
+                <Route path="/bloq/:slug" element={<BloqDetail />} />
                 
-                <Route path="corse" element={<Corse />} />
-                <Route path="quastion" element={<Quastion />} />
-                <Route path="contact" element={<Contact />} />
+                <Route path="/kurslar" element={<Corse />} />
+                <Route path="/suallar" element={<Quastion />} />
+                <Route path="/elaqe" element={<Contact />} />
                 {/* <Route path="mobile" element={<MobilePrograming />} /> */}
 
                 <Route path="detail/:slug" element={<TelimProqramlari />} />
