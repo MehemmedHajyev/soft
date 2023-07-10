@@ -3,6 +3,7 @@ import Accordion from '../../section/Test/Acardion';
 import img1 from '../../../assets/img/header-imgs/about-bcg.png'
 import BredCramp from '../../section/BredCramp/BredCramp'
 import axios from 'axios';
+import QuastionHeader from './QuastionHeader';
 
 const BASE_URL = 'https://api.softwarevillage.az/api/core/faq'
 
@@ -20,9 +21,15 @@ const Quastion = () => {
         getQuestions()
     }, [])
 
+
+
+    //////////
+
+    
+
     return (
         <div>
-            <BredCramp title='Sullar' text="text" image={img1} inPage='Suallar' />
+            <QuastionHeader />
             <Accordion items={questions} />
         </div>
     );

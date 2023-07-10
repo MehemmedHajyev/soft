@@ -3,14 +3,46 @@ import AboutConnactionsCart from './AboutConnactionsCart';
 import MapForm from './MapForm';
 import BredCramp from '../../section/BredCramp/BredCramp'
 import axios from 'axios'
-import React, { useEffect ,useState} from 'react'
+import React, { useEffect, useState } from 'react'
 
 
 
-const Contact = () => {  
+
+const Contact = () => {
+
+  const BASE_URL = 'https://api.softwarevillage.az/api/core/contact-info';
+
+
+  const [aboutContent, setaboutContent] = useState({})
+
+  const getaboutContent = async () => {
+    const res = await axios(BASE_URL)
+    const data = await res.data
+    setaboutContent(data)
+  }
+  console.log(aboutContent, "aboutcontent");
+
+  useEffect(() => {
+    getaboutContent()
+  }, [])
+
+
+
   return (
     <>
-      <BredCramp title={'title'} text="text"  image={img}/>
+      <BredCramp 
+      
+      title={aboutContent.title}  
+      inPage={aboutContent?.title}
+    
+      text={aboutContent?.description} 
+
+      image={`https://api.softwarevillage.az${aboutContent?.image}`
+    }       
+       />
+
+
+
       <AboutConnactionsCart />
       <MapForm />
     </>

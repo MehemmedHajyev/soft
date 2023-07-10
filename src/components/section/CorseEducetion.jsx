@@ -1,13 +1,35 @@
-import React from 'react'
-import img from '../../assets/img/card-img/imgg.png'
+import React, { useEffect, useState } from 'react'
+import { Link, useParams } from 'react-router-dom'
+
+import axios from 'axios'
+
 
 const CorseEducetion = () => {
+    
+    const { slug } = useParams()
+    const BASE_URL = `https://api.softwarevillage.az/api/core/education-section`;
+
+
+    const [courseDetail, setCourseDetail] = useState([])
+
+    const getCourseDetail = async () => {
+        const res = await axios(BASE_URL)
+        const data = await res.data
+        setCourseDetail(data)
+    }
+    console.log(courseDetail);
+
+    useEffect(() => {
+        getCourseDetail()
+    }, [])
+
+    
     return (
         <div className='corese-educetion-container'>
             <div className="corse-education-card">
-                <div className="corse-education-card-content"> <h2 className="corse-education-card-title">Softwarevillage’deTəhsil Təcrübəsi
+                <div className="corse-education-card-content"> <h2 className="corse-education-card-title">{courseDetail?.title}
                 </h2>
-                    <p className="corse-education-desc">Təhsil təcrübənizi ən səmərəli etmək üçün çalışırıq.</p>
+                    <p className="corse-education-desc">{courseDetail?.description}</p>
 
                 </div>
 

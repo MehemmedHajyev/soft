@@ -1,11 +1,33 @@
-import React from 'react'
 import img from '../../assets/img/card-img/M3_integrations_all_integrations.png.png'
 
+import React, { useEffect, useState } from 'react'
+import { Link, useParams } from 'react-router-dom'
+
+import axios from 'axios'
+
 const CorseInformation = () => {
+
+    const { slug } = useParams()
+    const BASE_URL = `https://api.softwarevillage.az/api/course/${slug}`;
+
+
+    const [courseDetail, setCourseDetail] = useState([])
+
+    const getCourseDetail = async () => {
+        const res = await axios(BASE_URL)
+        const data = await res.data
+        setCourseDetail(data)
+    }
+    console.log(courseDetail);
+
+    useEffect(() => {
+        getCourseDetail()
+    }, [])
+    
     return (
         <div className='corse-information-container'>
             <div className="corse-information-card">
-                <img src={img} alt="" />
+                <img src={`https://api.softwarevillage.az${courseDetail?.image_2}`} alt="" />
             </div>
 
 

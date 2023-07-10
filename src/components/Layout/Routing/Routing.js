@@ -14,7 +14,7 @@ import Corse from '../../Pages/Corses/Corse';
 import TelimProqramlari from '../../Pages/TelimProqramlari/TelimProqramlari';
 import  BloqDetail from '../../Pages/BlogDetail/BloqDetail'
 
-const BASE_URL = 'https://api.softwarevillage.az/api/course'
+const BASE_URL = 'https://api.softwarevillage.az/api/training-programs'
 
 
 
@@ -48,6 +48,7 @@ const Routing = () => {
                 {/* <Route path="mobile" element={<MobilePrograming />} /> */}
 
                 <Route path="detail/:slug" element={<TelimProqramlari />} />
+                <Route path="detail/:slug/:slug" element={<Corse />} />
 
                 <Route path="*" element={<NoPage />} />
             </Routes>

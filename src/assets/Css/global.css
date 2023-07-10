@@ -1816,6 +1816,9 @@ body {
 } */
 
 
+.telim-proqramlari-card{
+    cursor: pointer;
+}
 
 .fulll .telim-proqramlari-card-icons {
     background-color: rgba(16, 58, 244, 0.16);
@@ -1828,7 +1831,7 @@ body {
 
 }
 
-.telim-proqramlari-card-icons svg {
+.telim-proqramlari-card-icons img {
     max-width: 30px;
     max-height: 30px;
     display: flex;

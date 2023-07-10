@@ -54,7 +54,9 @@ const MainCarusel = () => {
                             </div>
                         </div>
                         <div className='main-carusel-image'>
-                            <img src={`api.softwarevillage.az${item.image}`} alt="" />
+                            <img src={`https://api.softwarevillage.az${item.image}`} alt="" />
+
+
                         </div>
 
                     </div>

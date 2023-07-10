@@ -32,17 +32,18 @@ const Corse = (traningText) => {
   return (
     <div>
       <BredCrampDinamic title={corseContent.title} 
-      
-      
       image={`https://api.softwarevillage.az${corseContent.image}`} 
       inPage={corseContent.description} />
+
+
+
       <DpageOne />
       <CorseInformation />
       <CorseTime />
-      <Training traningText={'Digər kurslar'} />
       <CorseEducetion />
       <ImageCards />
       <Sanaye />
+      <Training traningText={'Digər kurslar'} />
     </div>
   )
 }

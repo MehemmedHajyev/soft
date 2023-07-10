@@ -1,45 +1,46 @@
-import React from 'react';
- import img from '../../assets/img/blog-card-img/img.png';
+import img from '../../assets/img/blog-card-img/img.png';
+
+import React, { useEffect, useState } from 'react'
+import { Link, useParams } from 'react-router-dom'
+
+import axios from 'axios'
+
 
 const ImageCards = () => {
-    return (
+    
+    const { slug } = useParams()
+    const BASE_URL = `https://api.softwarevillage.az/api/course/${slug}`;
+
+
+    const [courseDetail, setCourseDetail] = useState([])
+
+    const getCourseDetail = async () => {
+        const res = await axios(BASE_URL)
+        const data = await res.data
+        setCourseDetail(data)
+    }
+    console.log(courseDetail);
+
+    useEffect(() => {
+        getCourseDetail()
+    }, [])
+return (
         <>
             <div className="ImageCards-main">
                 <h1>Sizi nələr gözləyir?</h1>
                 <div className="ImageCards-container">
 
-                    <div className="ImageCards-container-card">
-                        <img src={img} alt="" />
-                        <div className="ImageCards-container-card-hover-content">
-                        <p>loremmm</p>  
+                    {
+                        courseDetail.future_plan?.map((item) => (
+                            <div className="ImageCards-container-card">
+                                <img src={`https://api.softwarevillage.az${item?.image}`} alt="" />
+                                <div className="ImageCards-container-card-hover-content">
+                                <p>{item?.title}</p>  
 
-                        </div>
-                    </div>
-
-
-                    <div className="ImageCards-container-card">
-                        <img src={img} alt="" />
-                        <div className="ImageCards-container-card-hover-content">
-                        <p>loremmm</p>  
-
-                        </div>
-                    </div>
-                    <div className="ImageCards-container-card">
-                        <img src={img} alt="" />
-                        <div className="ImageCards-container-card-hover-content">
-                        <p>loremmm</p>  
-
-                        </div>
-                    </div>
-                    <div className="ImageCards-container-card">
-                        <img src={img} alt="" />
-                        <div className="ImageCards-container-card-hover-content">
-                        <p>loremmm</p>  
-
-                        </div>
-                    </div>
-               
-               
+                                </div>
+                            </div>  
+                        ))
+                    }            
 
                 </div>
 
