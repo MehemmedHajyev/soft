@@ -25,7 +25,7 @@ const TelimProqramHome = () => {
     return (
         <BredCramp
 
-            title={aboutContent.title}
+            title={aboutContent.slug}
 
             inPage={aboutContent?.title}
 

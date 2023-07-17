@@ -31,7 +31,7 @@ const Corse = (traningText) => {
 
   return (
     <div>
-      <BredCrampDinamic title={corseContent.title} 
+      <BredCrampDinamic title={corseContent.slug} 
       image={`https://api.softwarevillage.az${corseContent.image}`} 
       inPage={corseContent.description} />
 

@@ -7,15 +7,18 @@ import "slick-carousel/slick/slick-theme.css";
 import './assets/Css/global.css';
 import Routing from "./components/Layout/Routing/Routing";
 import { BrowserRouter } from "react-router-dom";
+import TemirPage from "./components/Pages/TemirPage";
 
 function App() {
   return (
     <>
-     <BrowserRouter>
+     {/* <BrowserRouter>
       <Layout>
         <Routing />
       </Layout>
-      </BrowserRouter>
+      </BrowserRouter> */}
+
+      <TemirPage />
 
     </>
   );

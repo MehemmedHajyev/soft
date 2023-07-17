@@ -397,7 +397,7 @@ body {
     margin-bottom: 22px;
 }
 
-.trainig-card-icons img{
+.trainig-card-icons img {
     width: 50px;
     height: 56px;
     display: flex;
@@ -1220,7 +1220,8 @@ body {
     transition: all .5s;
 
 }
-.blog-card-button:hover.blog-card-button svg{
+
+.blog-card-button:hover.blog-card-button svg {
     transform: rotate(360deg);
     transition: all .5s;
 
@@ -1596,7 +1597,7 @@ body {
 
 }
 
-.close-x{
+.close-x {
     font-size: 40px;
     font-weight: 300;
     border-radius: 40px;
@@ -1604,7 +1605,7 @@ body {
     display: block;
 }
 
-.close-x:hover{
+.close-x:hover {
     transform: rotate(180deg);
 }
 
@@ -1816,7 +1817,7 @@ body {
 } */
 
 
-.telim-proqramlari-card{
+.telim-proqramlari-card {
     cursor: pointer;
 }
 
@@ -2153,10 +2154,11 @@ body {
     padding: 10px;
 }
 
-.why-we-item-icon img{
+.why-we-item-icon img {
     width: 50px;
     height: 50px;
 }
+
 .why-we-item-content {
     text-align: center;
     line-height: 30px;
@@ -2204,11 +2206,12 @@ body {
     z-index: 99999999;
 }
 
-.partniyorlar-slider-container .partniyorlar-slider-item{
+.partniyorlar-slider-container .partniyorlar-slider-item {
     width: 84px;
     height: 88px;
 }
-.partniyorlar-slider-container .partniyorlar-slider-item img{
+
+.partniyorlar-slider-container .partniyorlar-slider-item img {
     aspect-ratio: 1/1;
     width: 100%;
     height: 100%;
@@ -2494,6 +2497,7 @@ body {
         max-width: 300px;
         width: 100%;
     }
+
     .main-carusel-button button {
         padding: 5px 10px;
         font-size: 14px;
@@ -2706,14 +2710,17 @@ body {
         justify-content: center;
         width: 250px;
     }
-    .about-header, .bred-cram-details{
+
+    .about-header,
+    .bred-cram-details {
         height: 50vh;
     }
 
     .header-img {
         height: 50vh !important;
         aspect-ratio: 1/.5;
-    }    
+    }
+
     .main-carusel-image img {
         display: flex;
         width: 250px;
@@ -3003,6 +3010,7 @@ body {
     .container {
         height: 550px !important;
     }
+
     .water-container {
         height: 200px;
     }
@@ -3417,4 +3425,36 @@ nav {
     justify-content: center;
     height: 100vh;
     font-size: 24px;
+}
+
+
+.temir-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+
+}
+
+.main-temir-page {
+    background: #0D68C9;
+    width: 100%;
+    height: 100vh;
+    padding-top: 100px
+    ;
+
+}
+
+.main-temir-page marquee{
+    color: #FFFFFF;
+    font-size: 60px;
+    display: block;
+    margin-top: 30px;
+}
+
+.temir-img {
+    width: 200px;
+    height: 200px;
+    display: block;
 }
