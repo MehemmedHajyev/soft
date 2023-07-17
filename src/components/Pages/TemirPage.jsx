@@ -5,6 +5,7 @@ const TemirPage = () => {
     return (
         <>
         <div className='main-temir-page'>
+            <marquee behavior="" direction="">Veb Saytda hal-hazırda təmir işləri aparlılr</marquee>
         <div className='temir-page'>
                 <div>
                     <img src={temirImg} className="temir-img" alt="" />
@@ -13,7 +14,7 @@ const TemirPage = () => {
 
             </div>
 
-            <marquee behavior="" direction="">Web-sitede hal-hazirda təmir işləri aparilir</marquee>
+
 
         </div>
           
