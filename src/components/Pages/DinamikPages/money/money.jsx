@@ -9,9 +9,36 @@ const Money = () => {
       </div>
       <div className="money-card-container">
 
-        <div className="money-card"></div>
-        <div className="money-card"></div>
-        <div className="money-card"></div>
+        <div className="money-card">
+          <div className="money-card-content">
+            <div className="money-card-icon">
+              icon
+            </div>
+            <h2>$ 10.000</h2>
+            <p>1-3 illik təcrübə ilə </p>
+          </div>
+
+        </div>
+    
+        <div className="money-card">
+          <div className="money-card-content">
+            <div className="money-card-icon">
+              icon
+            </div>
+            <h2>$ 10.000</h2>
+            <p>1-3 illik təcrübə ilə </p>
+          </div>
+
+        </div>     <div className="money-card">
+          <div className="money-card-content">
+            <div className="money-card-icon">
+              icon
+            </div>
+            <h2>$ 10.000</h2>
+            <p>1-3 illik təcrübə ilə </p>
+          </div>
+
+        </div>
 
       </div>
     </div>

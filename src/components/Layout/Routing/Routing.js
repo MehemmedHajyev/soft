@@ -15,6 +15,7 @@ import TelimProqramlariMain from '../../Pages/TelimProqramlari/TelimProqramlariM
 import BloqDetail from '../../Pages/BlogDetail/BloqDetail'
 import MuraciyyetED from '../../Pages/muraciyyetET/MuraciyyetED';
 import ScrollToTop from './ScrollTop';
+import DinamicCorse from '../../Pages/DinamikPages/DinamicCorse';
 
 const BASE_URL = 'https://api.softwarevillage.az/api/training-programs'
 
@@ -59,6 +60,8 @@ const Routing = () => {
                 <Route path="/bloq/:slug" element={<BloqDetail />} />
 
                 <Route path="/kurslar" element={<Corse />} />
+                <Route path="/detailsCourse" element={<DinamicCorse />} />
+
                 <Route path="/suallar" element={<Quastion />} />
                 <Route path="/elaqe" element={<Contact />} />
                 {/* <Route path="mobile" element={<MobilePrograming />} /> */}

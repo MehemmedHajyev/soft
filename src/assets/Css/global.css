@@ -4399,7 +4399,7 @@ nav {
 
 .money-container {
     max-width: 1170px;
-    margin: 50px auto;
+    margin: 100px auto;
 }
 
 .dinamik-infarmation-container-item-content-for-image {
@@ -4434,9 +4434,221 @@ nav {
     /* 150% */
 }
 
-.money-card-containe {
+.is-elanlari-container {
+    margin-bottom: 100px;
+
+}
+
+.teaching-container {
+    max-width: 1170px;
+    margin: 50px auto;
+}
+
+.teaching-container-content h1 {
+    color: #000;
+
+    /* Headline/H4 - M */
+    font-family: Euclid Circular A;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    /* 117.647% */
+}
+
+.teaching-container-content-card-container {
+    /* display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); */
+    gap: 200px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1170px;
+    margin: 30px auto;
+}
+
+.for-images-teacing {
+    width: 300px;
+    height: 300px;
+    /* padding: 20px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--text-color-hint, #8F9BB3);
+
+
+
+}
+
+.for-img-tec {
+    border-radius: 12px;
+    border: 1px solid var(--text-color-hint, #8F9BB3);
+    padding: 20px;
+}
+
+.teaching-container-content-card-title-des {
+    margin-top: 20px;
+    line-height: 30px;
+}
+
+.teaching-container-content-card-title-des h1 {
+
+    color: #000;
+
+    font-family: Euclid Circular A;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    /* 150% */
+}
+
+.for-teacing-desc-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+/* .teaching-container-content-card-just-name-infarmation{
+    dis
+} */
+
+.teaching-container-content-card-title-des p {
+    color: #000;
+
+    /* Subtitle/S2-R */
+    font-family: Euclid Circular A;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    /* 142.857% */
+}
+
+.for-images-teacing img {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.teaching-container-content-card-just-name-infarmation h1 {
+    color: var(--text-color-default-dark, #222B45);
+
+    /* Headline/H6 - R */
+    font-family: Euclid Circular A;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    /* 140% */
+}
+
+.teaching-container-content-card-just-name-infarmation p {
+    color: var(--text-color-default-dark, #222B45);
+
+    /* Subtitle/S2-R */
+    font-family: Euclid Circular A;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.teaching-container-content-card {
+    min-width: 340px;
+    border-radius: 16px;
+    display: block;
+}
+
+.is-elanlari-card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 200px;
+    max-width: 1170px;
+    margin: 30px auto;
+}
+
+.is-elanlari-card {
+    min-width: 280px;
+    border-radius: 16px;
+    border: 1px solid var(--basic-300, #EDF1F7);
+    background: var(--basic-100, #FFF);
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.is-elanlari-card-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.is-elanlari-card-content-title-desc {
+    margin-top: 30px;
+    line-height: 40px;
+}
+
+.m-t {
+    margin-top: 300px;
+}
+
+.money-card-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     gap: 32px;
+    max-width: 1170px;
+    margin: 50px auto;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
 
+.money-card {
+    min-width: 350px;
+    border-radius: 16px;
+    border: 1px solid var(--basic-300, #EDF1F7);
+    background: var(--basic-100, #FFF);
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.money-card-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.money-card-content h2 {
+    color: var(--text-color-default-dark, #222B45);
+
+    /* Headline/H5-M */
+    font-family: Euclid Circular A;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    /* 133.333% */
+}
+
+.money-card-content p {
+    color: var(--text-color-hint, #8F9BB3);
+
+    /* Subtitle/S1-R */
+    font-family: Euclid Circular A;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
 }

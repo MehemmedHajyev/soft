@@ -7,7 +7,9 @@ import Item from 'antd/es/list/Item'
 const CorseTime = () => {
 
     const { slug } = useParams()
-    const BASE_URL = `https://api.softwarevillage.az/api/course/${slug}`;
+    // const BASE_URL = `https://api.softwarevillage.az/api/course/${slug}`;
+    const BASE_URL = `https://api.softwarevillage.az/api/course`;
+
 
     const [courseDetail, setCourseDetail] = useState([])
 
