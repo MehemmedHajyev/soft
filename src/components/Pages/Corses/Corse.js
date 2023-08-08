@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import axios from 'axios';
 import img1 from '../../../assets/img/header-imgs/about-bcg.png'
-import BredCrampDinamic from '../../section/BredCrampDinamic/BredCrampDinamic'
+import BredCrampDinamic from '../../section/BredCrampDetails/BredCrampDetails'
 import Training from '../../section/Training';
 import Sanaye from '../../section/Senaye';
 import ImageCards from '../../section/ImageCards';

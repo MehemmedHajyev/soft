@@ -4,7 +4,7 @@ import { Link, useNavigate, useParams } from 'react-router-dom'
 
 import axios from 'axios'
 
-const BASE_URL = 'https://api.softwarevillage.az/api/training-programs'
+const BASE_URL = 'https://api.softwarevillage.az/api/course-home'
 
 
 const Training = ({ traningText }) => {
@@ -32,15 +32,13 @@ const Training = ({ traningText }) => {
         training.map((item) => (
           <a onClick={() => navigate(`/detail/${item.slug}`)} >
             <div className='trainig-card' >
-              <div className="trainig-card-icons lock">
-                <img src= {`https://api.softwarevillage.az${item.main_image}`} alt="" />
-                
-            
-              </div>
-
               <div className="trainig-card-content">
                 <h3>{item.title}</h3>
-                <p className='trainig-card-content-information-description'>{item.desc}</p>
+              </div>
+
+
+              <div className="trainig-card-icons locktrainig-card-icons lock">
+                <img src= {`https://api.softwarevillage.az${item?.main_image}`} alt="" />
               </div>
             </div>
           </a>

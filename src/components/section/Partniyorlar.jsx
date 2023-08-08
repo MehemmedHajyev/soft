@@ -26,17 +26,25 @@ const Partniyorlar = () => {
 
 
     return (
-        <PartniyorSlider className='partniyorlar-slider-container' >
-            {
-                partnyor.map((item) => (
-                    <div className='partniyorlar-slider-item'>
-                        <img src={`https://api.softwarevillage.az${item.image}`} alt={item.name} />
-                    </div>
-                ))
+        <>
 
-            }
+            <div className="partniyorlar-title-and-desc">
+                <h1>Akademik Partnyorlarımız</h1>
+                <p>Qlobal standartlara uyğun tədris imkanları sayəsində tələbələrimizidünyanın istənilən yerində professionallıqlarını sübut edə biləcəkşəkildə hazırlaşdırırıq.</p>
+            </div>
+            <PartniyorSlider className='partniyorlar-slider-container' >
+                {
+                    partnyor.map((item) => (
+                        <div className='partniyorlar-slider-item'>
+                            <img src={`https://api.softwarevillage.az${item.image}`} alt={item.name} />
+                        </div>
+                    ))
 
-        </PartniyorSlider>
+                }
+
+            </PartniyorSlider>
+        </>
+
     )
 }
 

@@ -36,7 +36,7 @@ export const Email = () => {
 
                     <div className='aboutConnactionsCart-content-desc'>
 
-                        <h4>Əlaqə nömrəsi</h4>
+                        <h4>Email</h4>
 
                         {
 

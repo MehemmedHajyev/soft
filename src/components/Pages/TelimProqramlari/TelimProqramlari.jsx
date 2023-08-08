@@ -4,8 +4,8 @@ import axios from 'axios'
 import BredCrampDetails from '../../section/BredCrampDetails/BredCrampDetails'
 import img1 from '../../../assets/img/header-imgs/about-bcg.png'
 import { Link, useParams, useNavigate} from 'react-router-dom'
-import TelimProqramHome from './TelimProqramHome'
 
+import BredCramp from '../../section/BredCramp/BredCramp'
 
 const TelimProqramlari = ({ products }) => {
 
@@ -33,7 +33,20 @@ useEffect(() => {
     
     return (
         <>
-     <TelimProqramHome />
+     {/* <TelimProqramHome /> */}
+     <BredCramp
+
+            title={data.title}
+
+            inPage={data?.slug}
+
+            text={data?.description}
+            
+
+            image={`https://api.softwarevillage.az${data?.image}`
+            }
+
+        />
      
         <div className='telim-proqramlari-container'>
         {

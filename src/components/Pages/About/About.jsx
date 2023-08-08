@@ -5,10 +5,11 @@ import WeMission from '../../section/WeMission'
 import WeOurDifference from '../../section/WeOurDifference'
 import WhyWe from '../../section/WhyWe'
 import BredCramp from '../../section/BredCramp/BredCramp';
-import img1 from '../../../assets/img/header-imgs/about-bcg.png'
 import AboutContent from '../../section/AboutContent'
 import axios from 'axios'
 import { useEffect, useState } from 'react'
+import WeTeam from '../../section/WeTeam';
+import Partniyorlar from '../../section/Partniyorlar';
 
 const About = () => {
 
@@ -30,19 +31,23 @@ const About = () => {
 
   return (
     <>
-      <BredCramp 
-      title={aboutContent.title}
-       inPage={aboutContent?.title}
-       text={aboutContent?.description} 
+      <BredCramp
+        title={aboutContent.title}
+        inPage={aboutContent?.title}
+        text={aboutContent?.description}
 
-       image={`https://api.softwarevillage.az${aboutContent?.image}`
-      }
-      
+        image={`https://api.softwarevillage.az${aboutContent?.image}`
+        }
+
       />
       <AboutContent />
       <WeOurDifference />
       <WeMission />
       <WhyWe />
+      <WeTeam />
+      <Partniyorlar />
+
+
 
 
     </>

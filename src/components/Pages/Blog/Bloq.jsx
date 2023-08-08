@@ -6,6 +6,7 @@ import BredCramp from '../../section/BredCramp/BredCramp'
 
 import axios from 'axios'
 import { useEffect, useState } from 'react'
+import Partniyorlar from '../../section/Partniyorlar';
 
 
 const Bloq = () => {
@@ -41,6 +42,7 @@ const Bloq = () => {
 
       
       <BloqContent />
+      <Partniyorlar />
     </>
 
   )

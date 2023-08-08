@@ -4,6 +4,7 @@ import img1 from '../../../assets/img/header-imgs/about-bcg.png'
 import BredCramp from '../../section/BredCramp/BredCramp'
 import axios from 'axios';
 import QuastionHeader from './QuastionHeader';
+import Partniyorlar from '../../section/Partniyorlar';
 
 const BASE_URL = 'https://api.softwarevillage.az/api/core/faq'
 
@@ -31,6 +32,7 @@ const Quastion = () => {
         <div>
             <QuastionHeader />
             <Accordion items={questions} />
+            <Partniyorlar />
         </div>
     );
 };

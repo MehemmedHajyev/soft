@@ -24,17 +24,6 @@ const AboutConnactionsCart = () => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
     return (
         <div className='aboutConnactionsCart-contanier'>
 

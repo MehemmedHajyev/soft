@@ -21,11 +21,12 @@ function Navbar() {
                 <Link onClick={() => showNavbar()} to="bloq"><a className="item-link">Bloq</a></Link>
                 <Link onClick={() => showNavbar()} to="elaqe"><a className="item-link">Əlaqə</a></Link>
 
-                <div className="search-buttons">
+             
+                <div className="search-buttons" id="for-responsive-button">
                     <div className="button-container">
 
-                        <Link to="contact">
-                            <button >
+                        <Link to="muraciyyetED" onClick={() => showNavbar()}>
+                            <button  >
                                 Müraciət et
                             </button>
                         </Link>
@@ -35,8 +36,7 @@ function Navbar() {
                 </div>
 
                 <button
-                    className="nav-btn nav-close-btn"
-                    onClick={showNavbar}>
+                    className="nav-btn nav-close-btn" onClick={showNavbar}>
                     <div className="close-container-x">
                         <span className="close-x">x</span>
                     </div>
@@ -49,6 +49,16 @@ function Navbar() {
                 onClick={showNavbar}>
                 <i className="fa fa-solid fa-bars"></i>
             </button>
+            <div className="search-buttons" id="for-dekstop">
+                    <div className="button-container">
+
+                        <Link to="muraciyyetED" onClick={() => showNavbar()}>
+                            <button> Müraciət et</button>
+                        </Link>
+
+
+                    </div>
+                </div>
         </div>
     );
 }

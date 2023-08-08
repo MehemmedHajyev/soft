@@ -1,12 +1,12 @@
 import React from 'react'
 import BredCramp from '../../section/BredCramp/BredCramp';
-
+                                                                                    
 import axios from 'axios'
 import { useEffect, useState } from 'react'
 
 const TelimProqramHome = () => {
 
-    const BASE_URL = 'https://api.softwarevillage.az/api/core/course-info';
+    const BASE_URL = `https://api.softwarevillage.az/api/core/course-info`;
 
     const [aboutContent, setaboutContent] = useState({})
 
@@ -25,11 +25,12 @@ const TelimProqramHome = () => {
     return (
         <BredCramp
 
-            title={aboutContent.slug}
+            title={aboutContent.title}
 
-            inPage={aboutContent?.title}
+            inPage={aboutContent?.slug}
 
             text={aboutContent?.description}
+            
 
             image={`https://api.softwarevillage.az${aboutContent?.image}`
             }

@@ -16,7 +16,7 @@ const BredCramp = ({title, text ,image,inPage} ) => {
                             </div>
                             <div className="about-header-come-back-buttons">
                                 <p>
-                                <Link to="/" className='about-header-come-back-buttons-link' > Ana səhifə/</Link>
+                                <Link to="/" className='about-header-come-back-buttons-link' > Ana səhifə / </Link>
                                     <span>{inPage}</span></p>
                             </div>
                         </div>

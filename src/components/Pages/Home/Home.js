@@ -10,22 +10,24 @@ import BloqContent from '../../section/blog-content/BloqContent';
 import TeamSliderItems from '../../section/TeamSliderItems'
 import PartniyorSlider from '../../Sliders/PartniyorSlider'
 import Partniyorlar from '../../section/Partniyorlar'
+import Counter from '../../Layout/Counter/Counter'
 const Home = (traningText) => {
     return (
         <>
-             <MainCarusel />
-            <Training  traningText={'Təlim proqramları'} />
+            <MainCarusel />
+            <Training traningText={'Təlim proqramları'} />
             <HomeAbout />
-            <AboutWe />
             <WhyWe />
-            < Partniyorlar/>
+            <AboutWe />
             <WeTeam />
             <TeamSliderItems />
             <BloqContent />
+            < Partniyorlar />
+            {/* <Counter /> */}
 
-         
 
-            
+
+
         </>
     )
 }

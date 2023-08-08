@@ -16,7 +16,7 @@ const [data, setData] = useState([])
 
 
 const getData = async () => {
-    await axios.get(`https://api.softwarevillage.az/api/training-programs`)
+    await axios.get(`https://api.softwarevillage.az/api/course`)
     .then((res) => {
         setData(res?.data)
     }).catch(() => {

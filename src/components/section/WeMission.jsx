@@ -21,6 +21,13 @@ const WeMission = () => {
             <div className='homeAbout'>
                 <h3>{missions.title}</h3>
                 <div className="grid-container">
+                <div className="grid-card">
+                        <div className="">
+                            <img src={`https://api.softwarevillage.az${missions.image}`} alt="" />
+
+                        </div>
+                    </div>
+
                     <div className="grid-card">
                         <div className="home-about-content-grid-card">
 
@@ -29,12 +36,7 @@ const WeMission = () => {
                             </p>
                         </div>
                     </div>
-                    <div className="grid-card">
-                        <div className="">
-                            <img src={`https://api.softwarevillage.az${missions.image}`} alt="" />
-
-                        </div>
-                    </div>
+                  
 
                 </div>
             </div>

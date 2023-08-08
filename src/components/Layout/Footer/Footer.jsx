@@ -46,44 +46,44 @@ const Footer = () => {
 
   }
 
-  return (
-    <>
-      <div className="water-container">
-        <div className="water-container-content">
-          <div>
-            <p className="footer-title">Bizimlə əlaqə saxlayın</p>
-            <div className="footer-search-container">
-              <input type="email" placeholder='Email ünvanı qeyd edin:'
-                value={emailSubs} onChange={(e) => setEmail(e.target.value)}
-              />
-              <button onClick={handleSubscription}>Göndər</button>
+  // return (
+  //   <>
+  //     <div className="water-container">
+  //       <div className="water-container-content">
+  //         <div>
+  //           <p className="footer-title">Bizimlə əlaqə saxlayın</p>
+  //           <div className="footer-search-container">
+  //             <input type="email" placeholder='Email ünvanı qeyd edin:'
+  //               value={emailSubs} onChange={(e) => setEmail(e.target.value)}
+  //             />
+  //             <button onClick={handleSubscription}>Göndər</button>
 
 
-            </div>
-            <ul className="footer-list">
-              <li>
-                <a href="/">Təlim proqramları</a>
-              </li>
-              <li>
-                <a href="about">Haqqımızda</a>
-              </li> <li>
-                <a href="">Bloq</a>
-              </li> <li>
-                <a href="">Əlaqə</a>
-              </li>
+  //           </div>
+  //           <ul className="footer-list">
+  //             <li>
+  //               <a href="/">Təlim proqramları</a>
+  //             </li>
+  //             <li>
+  //               <a href="about">Haqqımızda</a>
+  //             </li> <li>
+  //               <a href="">Bloq</a>
+  //             </li> <li>
+  //               <a href="">Əlaqə</a>
+  //             </li>
 
-            </ul>
-            <CoppyRight />
-          </div>
-        </div>
-      </div>
+  //           </ul>
+  //           <CoppyRight />
+  //         </div>
+  //       </div>
+  //     </div>
 
-      <div class="container">
+  //     <div class="container">
 
-      </div>
-    </>
+  //     </div>
+  //   </>
 
-  )
+  // )
 }
 
 export default Footer

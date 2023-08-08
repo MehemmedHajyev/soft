@@ -36,7 +36,7 @@ export const WhatsappCard = () => {
 
                     <div className='aboutConnactionsCart-content-desc'>
 
-                        <h4>Əlaqə nömrəsi</h4>
+                        <h4>Whatsapp</h4>
 
                         {
 

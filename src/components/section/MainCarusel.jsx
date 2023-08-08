@@ -2,6 +2,8 @@ import React from 'react'
 import Carousel from '../Sliders/Carousel'
 import axios from 'axios'
 import { useEffect, useState } from 'react'
+import Link from 'antd/es/typography/Link';
+import { useNavigate } from 'react-router-dom';
 const BASE_URL = 'https://api.softwarevillage.az/api/core/slider';
 
 
@@ -25,14 +27,23 @@ const MainCarusel = () => {
             // Handle error
             console.log(err);
         }
-        
-      
+
+
     }
-    console.log(mainSlider,'testt');
+    console.log(mainSlider, 'testt');
 
     useEffect(() => {
         getMainSlider()
     }, [])
+
+    const navigate = useNavigate();
+
+    const rout = (() => {
+        navigate("/muraciyyetED");
+    })
+
+
+
     return (
         <Carousel className='main-carusel'>
             {mainSlider.map((item) => (
@@ -50,7 +61,15 @@ const MainCarusel = () => {
                                 </p>
                             </div>
                             <div className="main-carusel-button">
-                                <button href={item.button_link}>{item.button_text}</button>
+
+                                {/* <Link to='/muraciyyetED'>
+                                <button>{item.button_text}</button>
+                                </Link> */}
+                                <Link to="muraciyyetED">
+                                    <button onClick={() => rout()} >
+                                        Müraciət et
+                                    </button>
+                                </Link>
                             </div>
                         </div>
                         <div className='main-carusel-image'>
