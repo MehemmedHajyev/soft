@@ -1,8 +1,10 @@
 import React, {useEffect, useState} from 'react'
 import CorseTime from '../../section/CorseTime'
+import Training from '../../section/Training'
 import WhyWe from '../../section/WhyWe'
 import DinamikHeader from './DinamikHeader/DinamikHeader'
 import DinamikINfarmation from './DinamikINfarmation/DinamikINfarmation'
+import IsElanlari from './IsElanlari/IsElanlari'
 import Money from './money/Money'
 import Sillabus from './Sillabus/Sillabus'
 import { Link, useParams, useNavigate} from 'react-router-dom'
@@ -50,6 +52,8 @@ const DinamicCorse = () => {
 
       <WhyWe className='sillabus-in-why-we'/>
       <Money data={data} />
+
+      <Training traningText={'Digər Kurslar'} />
 
     </div>
   )

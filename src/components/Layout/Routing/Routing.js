@@ -60,6 +60,8 @@ const Routing = () => {
                 <Route path="/bloq/:slug" element={<BloqDetail />} />
 
                 <Route path="/kurslar" element={<Corse />} />
+                <Route path="/detailsCourse" element={<DinamicCorse />} />
+
                 <Route path="/suallar" element={<Quastion />} />
                 <Route path="/elaqe" element={<Contact />} />
                 {/* <Route path="mobile" element={<MobilePrograming />} /> */}
