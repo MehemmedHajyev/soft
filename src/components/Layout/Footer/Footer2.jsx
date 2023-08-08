@@ -1,11 +1,31 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react';
 import { Input, Select } from 'antd';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
+
 const handleChange = (value) => {
   console.log(`selected ${value}`);
 };
 
 const Footer2 = () => {
+
+  const [data, setData] = useState([]);
+
+  const getData = async () => {
+
+    // front-end-uzr-bootcamp
+    await axios.get(`https://api.softwarevillage.az/api/core/footer-courses`)
+      .then((res) => {
+        setData(res?.data)
+        console.log(res?.data)
+      }).catch((err) => {
+
+      })
+  }
+
+  useEffect(() => {
+    getData();
+  }, [])
 
   return (
 
@@ -50,14 +70,13 @@ const Footer2 = () => {
 
 
             </ul>
+            
             <ul className="boot-camps-list">
-              <li><a><Link to=''>Frontend proqramlaşdırma</Link></a></li>
-              <li><a><Link to=''>Frontend proqramlaşdırma</Link></a></li>
-              <li><a><Link to=''>Frontend proqramlaşdırma</Link></a></li>
-              <li><a><Link to=''>Frontend proqramlaşdırma</Link></a></li>
-              <li><a><Link to=''>Frontend proqramlaşdırma</Link></a></li>
-
+              {data?.map((d, i) => (
+                <li key={i}><a><Link to={`/kurslar/${d?.slug}`}>{d?.title}</Link></a></li>
+              ))}
             </ul>
+
             <ul className="sosial-links">
               <li><a><Link to=''>
                 <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">

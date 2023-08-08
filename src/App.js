@@ -21,13 +21,13 @@ function App() {
   }, [window.location.pathname]);
   return (
     <>
-     {/* <BrowserRouter>
+     <BrowserRouter>
       <Layout>
         <ScrollToTop />
         <Routing />
       </Layout>
-      </BrowserRouter> */}
-      <DinamicCorse />
+      </BrowserRouter>
+      {/* <DinamicCorse /> */}
       
     </>
   );

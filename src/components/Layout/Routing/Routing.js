@@ -10,6 +10,7 @@ import Quastion from '../../Pages/Suallar/Quastion';
 import About from '../../Pages/About/About';
 import NoPage from '../../Pages/NoPage/NoPage';
 import Corse from '../../Pages/Corses/Corse';
+import DinamicCorse from '../../Pages/DinamikPages/DinamicCorse';
 import TelimProqramlari from '../../Pages/TelimProqramlari/TelimProqramlari';
 import TelimProqramlariMain from '../../Pages/TelimProqramlari/TelimProqramlariMain';
 import BloqDetail from '../../Pages/BlogDetail/BloqDetail'
@@ -53,7 +54,7 @@ const Routing = () => {
                 <Route path="/haqqimizda" element={<About />} />
                 <Route path="/telimproqramlari" element={<TelimProqramlariMain />} />
                 <Route path="/telimproqramlari/:slug" element={<TelimProqramlari />} />
-                <Route path="/telimproqramlari/:slug/:slug" element={<Corse />} />
+                <Route path="/kurslar/:slug/" element={<DinamicCorse />} />
                 <Route path="/bloq" element={<Blog />} />
 
                 <Route path="/bloq/:slug" element={<BloqDetail />} />

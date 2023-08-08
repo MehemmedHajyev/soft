@@ -2,20 +2,18 @@ import Link from 'antd/es/typography/Link'
 import React from 'react'
 import img from '../../../../assets/img/header-imgs/about-bcg.png'
 
-const DinamikHeader = () => {
+const DinamikHeader = ({data}) => {
+
   return (
     <div>
       <div className='about-header'>
         <div className="shwadow">
-          <img src={img} className="header-img" />
+          <img src={`https://api.softwarevillage.az${data?.background_image}`} className="header-img" />
           <div className="shadow-for-img ">
             <div className="about-header-content-for-dinamik">
               <div className='about-header-content-for-dinamik-item'>
-                <h1>Qrafik Dizayn üzrə
-                  Bootcamp</h1>
-                <p>Şirkətlər bəzən ayrı Qrafik Dizayner işə götürmək əvəzinə
-                  hər UX/Ui  və Qrafik dizayner işini bilən mütəxəssislə çalışmağa üstünlük verirlər. Şirkətlərin
-                  axtardığı MERN dizayner olmaq üçün bizə müraciət et!</p>
+                <h1>{data?.title}</h1>
+                <p>{data?.desc}</p>
                 <button className='muraciyyet-et-btn'> Müraciət et</button>
               </div>
               <div className='about-header-content-for-dinamik-item'>
@@ -34,15 +32,15 @@ const DinamikHeader = () => {
                 <div className='kurs-cedveli'>
                   <div className='kurs-cedveli-items'>
                     <span>Müddət:</span>
-                  <p>12 ay</p>
+                  <p>{data?.duration}</p>
                   </div>
                   <div className='kurs-cedveli-items'>
                     <span>Tədris forması:</span>
-                  <p>Əyani</p>
+                  <p>{data?.teaching_form}</p>
                   </div>
                   <div className='kurs-cedveli-items'>
                     <span>Son müraciət tarixi:</span>
-                  <p>-</p>
+                  <p>{data?.last_apply_date ? data?.last_apply_date : '' }</p>
                   </div>
                  
                 </div>
@@ -51,7 +49,7 @@ const DinamikHeader = () => {
               <div className="about-header-come-back-buttons">
                 <p>
                   <Link to="/" className='about-header-come-back-buttons-link' > Ana səhifə / </Link>
-                  <span>inPage</span></p>
+                  <span>{data?.title}</span></p>
               </div>
             </div>
 
