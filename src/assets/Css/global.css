@@ -2354,7 +2354,7 @@ span {
     min-width: 200px;
     height: 140px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 20px;
 
 }
@@ -2369,11 +2369,11 @@ span {
 .telim-proqramlari-card-content {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 30px;
     min-width: 300px;
     margin: 0 auto;
-
 }
+
 
 /* .fulll .telim-proqramlari-card-icons {
     background-color: rgba(255, 35, 35, .16);
