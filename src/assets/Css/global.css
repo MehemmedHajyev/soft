@@ -4,22 +4,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Mulish', sans-serif;
+    font-family: 'euclid-circular-a' !important;
     list-style: none;
     text-decoration: none;
-    /* background: #222B45CC; */
 
 }
 
 body {
     height: 100vh;
     overflow: auto;
+    font-family: Euclid Circular A;
 }
 
 .header-bcg {
     width: 100%;
     background: var(--text-color-default-dark, #222B45);
     padding: 20px;
+    font-family: Euclid Circular A;
 }
 
 .header-nav-list {
@@ -29,12 +30,14 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: Euclid Circular A;
 }
 
 .logo {
     cursor: pointer;
     width: 293px;
-    height: 40px;
+    height: 40px
+    
 }
 
 .logo img {
@@ -54,7 +57,7 @@ body {
 }
 
 .header-list .header-list-item a {
-    font-family: 'Mulish';
+    font-family: Euclid Circular A;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -81,7 +84,7 @@ body {
 .btn-add,
 .corese-infarmetion-btn {
     padding: 7px 15px;
-    font-family: 'Mulish';
+    font-family: Euclid Circular A;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -288,7 +291,7 @@ body {
 
 
 .main-carusel-title {
-    font-family: 'Mulish';
+    font-family: Euclid Circular A;
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
@@ -302,7 +305,7 @@ body {
 }
 
 .main-carusel-paragraf {
-    font-family: 'Mulish';
+    font-family: Euclid Circular A;
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -339,7 +342,7 @@ body {
 }
 
 .trainig h1 {
-    font-family: 'Mulish';
+    font-family: Euclid Circular A;
     font-style: normal;
     font-weight: 500;
     font-size: 36px;
@@ -469,7 +472,7 @@ body {
 
 .trainig-card-content h3 {
     max-width: 184px;
-    font-family: 'Mulish';
+    font-family: Euclid Circular A;
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -504,7 +507,7 @@ body {
 
 .trainig-card-content-information {
     max-width: 163px;
-    font-family: 'Mulish';
+    font-family: Euclid Circular A;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -515,7 +518,7 @@ body {
 
 .trainig-card-content-information-description {
     max-width: 212px;
-    font-family: 'Mulish';
+    font-family: Euclid Circular A;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -535,7 +538,7 @@ body {
 /* ////////// haqqimizda Home Start */
 
 .homeAbout h3 {
-    font-family: 'Mulish';
+    font-family: Euclid Circular A;
     font-style: normal;
     font-weight: 500;
     font-size: 36px;
@@ -599,7 +602,7 @@ body {
 
 .home-about-content-grid-card h4 {
     max-width: 434px;
-    font-family: 'Mulish';
+    font-family: Euclid Circular A;
     font-style: normal;
     font-weight: 500;
     font-size: 28px;
@@ -609,7 +612,7 @@ body {
 }
 
 .home-about-content-desc-name {
-    font-family: 'Mulish';
+    font-family: Euclid Circular A;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -638,7 +641,7 @@ body {
 }
 
 .home-about-content-grid-card-button {
-    font-family: 'Mulish';
+    font-family: Euclid Circular A;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -741,7 +744,7 @@ body {
 
 
 .center-mood-slider-information h1 {
-    font-family: Mulish;
+       font-family: Euclid Circular A;
     font-size: 22px;
     font-weight: 600;
     line-height: 28px;
@@ -752,7 +755,7 @@ body {
 }
 
 .center-mood-slider-information p {
-    font-family: Mulish;
+       font-family: Euclid Circular A;
     font-size: 20px;
     font-weight: 400;
     line-height: 25px;
@@ -856,7 +859,8 @@ body {
 .for-detail-breadCramp {
     position: relative;
     width: 100%;
-    height: 90vh;
+    height: 55vh;
+    background-size: 100% 100%;
 }
 
 .dinamik-page-header {
@@ -1238,7 +1242,7 @@ span {
 }
 
 .aboutConnactionsCart-content-desc h4 {
-    font-family: 'Mulish';
+    font-family: Euclid Circular A;
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -1247,7 +1251,7 @@ span {
 }
 
 .aboutConnactionsCart-content-desc p {
-    font-family: 'Mulish';
+    font-family: Euclid Circular A;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -1340,7 +1344,7 @@ span {
 }
 
 .about-we-home-count {
-    font-family: 'Mulish';
+    font-family: Euclid Circular A;
     font-style: normal;
     font-weight: 800;
     font-size: 48px;
@@ -1350,7 +1354,7 @@ span {
 
 .about-we-home-desc {
     max-width: 185px;
-    font-family: 'Mulish';
+    font-family: Euclid Circular A;
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
@@ -1368,7 +1372,7 @@ span {
     text-align: center;
     color: #000;
     font-size: 32px;
-    font-family: Mulish;
+       font-family: Euclid Circular A;
     font-weight: 600;
     line-height: 30px;
     margin-bottom: 70px;
@@ -1405,7 +1409,7 @@ span {
 .sanaye-card-content-title {
     color: #000;
     font-size: 20px;
-    font-family: Mulish;
+       font-family: Euclid Circular A;
     font-weight: 600;
     line-height: 30px;
     text-align: center;
@@ -1414,7 +1418,7 @@ span {
 .sanaye-card-content-desc {
     color: #4E4E50;
     font-size: 18px;
-    font-family: Mulish;
+       font-family: Euclid Circular A;
     font-weight: 600;
     line-height: 30px;
     max-width: 187px;
@@ -1696,7 +1700,7 @@ span {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Mulish';
+    font-family: Euclid Circular A;
     font-style: normal;
     font-weight: 700;
     font-size: 64px;
@@ -1711,7 +1715,7 @@ span {
 }
 
 .blog-grid-card .blog-grid-card-title {
-    font-family: 'Mulish';
+    font-family: Euclid Circular A;
     font-style: normal;
     font-weight: 600;
     font-size: 25px;
@@ -1732,7 +1736,7 @@ span {
 }
 
 .blog-card-date {
-    font-family: 'Mulish';
+    font-family: Euclid Circular A;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -1812,7 +1816,7 @@ span {
     color: rgba(0, 0, 0, 0.87);
     text-align: center;
     font-size: 24px;
-    font-family: Mulish;
+       font-family: Euclid Circular A;
     line-height: 33px;
 }
 
@@ -1827,7 +1831,7 @@ span {
     cursor: pointer;
     color: #273150;
     font-size: 18px;
-    font-family: Mulish;
+       font-family: Euclid Circular A;
 }
 
 .footer-search-container {
@@ -1852,13 +1856,13 @@ span {
 .footer-search-container input::placeholder {
     color: #4E4E50;
     font-size: 16px;
-    font-family: Mulish;
+       font-family: Euclid Circular A;
 }
 
 .footer-search-container button {
     color: #FFF;
     font-size: 16px;
-    font-family: Mulish;
+       font-family: Euclid Circular A;
     padding: 4px 30px;
     border-radius: 23.25px;
     background: #2196F3;
@@ -2186,7 +2190,7 @@ span {
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 30px;
-    font-family: Mulish;
+       font-family: Euclid Circular A;
     font-weight: 500;
     /* text-align: center; */
 
@@ -2209,7 +2213,7 @@ span {
     /* text-align: center; */
     color: #FFF;
     font-size: 18px;
-    font-family: Mulish;
+       font-family: Euclid Circular A;
     line-height: 27px;
     margin-top: 10px;
 
@@ -2221,7 +2225,7 @@ span {
     background: #FFF;
     color: #000;
     font-size: 18px;
-    font-family: Mulish;
+       font-family: Euclid Circular A;
     font-weight: 500;
     padding: 5px 10px;
     border: none;
@@ -2293,7 +2297,7 @@ span {
 }
 
 .ImageCards-container-card-hover-content p {
-    font-family: Mulish;
+       font-family: Euclid Circular A;
     font-size: 22px;
     font-weight: 500;
     line-height: 28px;
@@ -2303,7 +2307,7 @@ span {
 }
 
 .ImageCards-main h1 {
-    font-family: Mulish;
+       font-family: Euclid Circular A;
     font-size: 32px;
     font-weight: 600;
     line-height: 30px;
@@ -2340,7 +2344,7 @@ span {
 }
 
 .dpage-one-card-content-title {
-    font-family: Mulish;
+       font-family: Euclid Circular A;
     font-size: 32px;
     font-weight: 600;
     line-height: 33px;
@@ -2350,7 +2354,7 @@ span {
 }
 
 .dpage-one-card-content-desc {
-    font-family: Mulish;
+       font-family: Euclid Circular A;
     font-size: 20px;
     font-weight: 400;
     line-height: 25px;
@@ -2487,7 +2491,7 @@ span {
     max-width: 425px;
     color: #000;
     font-size: 32px;
-    font-family: Mulish;
+       font-family: Euclid Circular A;
     font-weight: 600;
     line-height: 44px;
 }
@@ -2582,7 +2586,7 @@ span {
     max-width: 310px;
     color: #000;
     font-size: 36px;
-    font-family: Mulish;
+       font-family: Euclid Circular A;
     font-weight: 500;
     line-height: 44px;
     text-align: center;
@@ -2594,7 +2598,7 @@ span {
     max-width: 217px;
     color: #000;
     font-size: 22px;
-    font-family: Mulish;
+       font-family: Euclid Circular A;
     line-height: 30px;
     text-align: center;
 
@@ -2645,8 +2649,8 @@ span {
     color: #000;
     text-align: center;
     font-size: 14px;
-    font-family: Roboto;
-    line-height: 120%;
+    font-family: Euclid Circular A;
+        line-height: 120%;
 }
 
 
@@ -2680,7 +2684,7 @@ span {
     color: #273150;
     text-align: center;
     font-size: 14px;
-    font-family: Mulish;
+       font-family: Euclid Circular A;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2996,7 +3000,7 @@ span {
 }
 
 .team-slider .item p {
-    font-family: 'Mulish';
+    font-family: Euclid Circular A;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -3018,7 +3022,7 @@ span {
 }
 
 .description-teamslider-bootom {
-    font-family: 'Mulish';
+    font-family: Euclid Circular A;
     font-style: normal;
     font-weight: 500;
     font-size: 36px;
@@ -3030,7 +3034,7 @@ span {
 }
 
 .team-slider-title {
-    font-family: 'Mulish';
+    font-family: Euclid Circular A;
     font-style: normal;
     font-weight: 500;
     font-size: 36px;
@@ -3145,7 +3149,7 @@ span {
     color: #4e4e50;
     text-align: center;
     font-size: 16px;
-    font-family: Mulish;
+       font-family: Euclid Circular A;
     font-weight: 500;
     line-height: 150%;
     letter-spacing: 0.16px;
@@ -3242,6 +3246,7 @@ nav .item-link {
     overflow: hidden;
     padding: 10px;
     width: inherit;
+    font-family: Euclid Circular A;
 
 }
 
@@ -3255,11 +3260,12 @@ nav .item-link::after {
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.3s ease;
-
+    font-family: Euclid Circular A;
 
 }
 
 nav .item-link:hover::after {
+    font-family: Euclid Circular A;
     transform: scaleX(1);
     display: flex;
     align-items: center;
@@ -3280,6 +3286,7 @@ nav .item-link:hover::after {
     visibility: hidden;
     opacity: 0;
     font-size: 1.8rem;
+    font-family: Euclid Circular A;
 }
 
 .header-for-nav div,
@@ -3288,12 +3295,14 @@ nav {
     align-items: center;
     max-width: 1170px;
     margin: 0 auto;
+    font-family: Euclid Circular A;
 }
 
 @media only screen and (max-width: 1050px) {
     .header-for-nav .nav-btn {
         visibility: visible;
         opacity: 1;
+        font-family: Euclid Circular A;
     }
 
     .search-buttons {
@@ -3489,7 +3498,7 @@ nav {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
     max-width: 1170px;
-    margin: 50px 15px;
+    margin: 50px auto;
     gap: 50px;
     /* display: flex;
     align-items: center;
@@ -4160,7 +4169,7 @@ nav {
         max-width: 1170px;
         gap: 50px;
     }
-    
+
     .dinamik-infarmation-container-item {
         min-width: 300px;
     }
@@ -4257,7 +4266,7 @@ nav {
     }
 
     .about-header-content h1 {
-        font-family: 'Mulish';
+        font-family: Euclid Circular A;
         font-style: normal;
         font-weight: 700;
         font-size: 25px;
@@ -4266,7 +4275,7 @@ nav {
     }
 
     .about-header-content p {
-        font-family: 'Mulish';
+        font-family: Euclid Circular A;
         font-style: normal;
         font-weight: 400;
         font-size: 15px;
@@ -4275,7 +4284,7 @@ nav {
     }
 
     .blog-grid-card .blog-grid-card-title {
-        font-family: 'Mulish';
+        font-family: Euclid Circular A;
         font-style: normal;
         font-weight: 600;
         font-size: 20px;
@@ -4299,7 +4308,7 @@ nav {
     }
 
     .main-carusel-paragraf {
-        font-family: 'Mulish';
+        font-family: Euclid Circular A;
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
@@ -4342,7 +4351,7 @@ nav {
     }
 
     .center-mood-slider-information h1 {
-        font-family: Mulish;
+           font-family: Euclid Circular A;
         font-size: 17px !important;
         font-weight: 600;
         line-height: 28px;
@@ -4353,7 +4362,7 @@ nav {
     }
 
     .center-mood-slider-information p {
-        font-family: Mulish;
+           font-family: Euclid Circular A;
         font-size: 14px;
         font-weight: 400;
         line-height: 25px;
@@ -4436,9 +4445,10 @@ nav {
 
 
 
+
     .home-about-content-grid-card h4 {
         max-width: 434px;
-        font-family: 'Mulish';
+        font-family: Euclid Circular A;
         font-style: normal;
         font-weight: 500;
         font-size: 20px;
@@ -4448,7 +4458,7 @@ nav {
     }
 
     .home-about-content-desc-name {
-        font-family: 'Mulish';
+        font-family: Euclid Circular A;
         font-size: 14px;
         line-height: 23px;
 
@@ -4482,7 +4492,7 @@ nav {
     }
 
     .about-we-home-count {
-        font-family: 'Mulish';
+        font-family: Euclid Circular A;
         font-style: normal;
         font-weight: 800;
         font-size: 18px;
@@ -4492,7 +4502,7 @@ nav {
 
     .about-we-home-desc {
         max-width: 90px;
-        font-family: 'Mulish';
+        font-family: Euclid Circular A;
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
@@ -4525,7 +4535,7 @@ nav {
 
 
     .mobile-programing-card-content h2 {
-        font-family: 'Mulish';
+        font-family: Euclid Circular A;
         font-style: normal;
         font-weight: 500;
         font-size: 24px;
@@ -4586,7 +4596,7 @@ nav {
     }
 
     .main-carusel-paragraf {
-        font-family: 'Mulish';
+        font-family: Euclid Circular A;
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
@@ -4610,7 +4620,7 @@ nav {
     }
 
     .team-slider .item p {
-        font-family: 'Mulish';
+        font-family: Euclid Circular A;
         font-style: normal;
         font-weight: 500;
         font-size: 18px;
@@ -4729,7 +4739,7 @@ nav {
     /* .footer-search-container button {
         color: #FFF;
         font-size: 14px;
-        font-family: Mulish;
+           font-family: Euclid Circular A;
         padding: 4px 20px;
 
     } */
@@ -4770,7 +4780,7 @@ nav {
 
     .banner-img-shadow h1 {
 
-        font-family: Mulish;
+           font-family: Euclid Circular A;
         font-weight: 500;
         /* text-align: center; */
 
@@ -4781,7 +4791,7 @@ nav {
         /* text-align: center; */
         color: #FFF;
         font-size: 14px;
-        font-family: Mulish;
+           font-family: Euclid Circular A;
         line-height: 20px;
 
     }
@@ -4795,10 +4805,10 @@ nav {
 
     .about-header-content-for-dinamik-item h1 {
         font-size: 35px;
-      
+
     }
 
-    .muraciyyet-et-btn{
+    .muraciyyet-et-btn {
         padding: 10px 30px;
     }
 
@@ -4885,7 +4895,7 @@ nav {
 
 
     .team-slider .item p {
-        font-family: 'Mulish';
+        font-family: Euclid Circular A;
         font-style: normal;
         font-weight: 500;
         font-size: 14px !important;
@@ -4947,5 +4957,10 @@ nav {
 
 }
 
+
+
+.home-about-image-grid-card img {
+    border-radius: 16px;
+}
 
 /* ///Responsive End */

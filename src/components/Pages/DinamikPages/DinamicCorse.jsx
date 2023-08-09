@@ -44,7 +44,7 @@ const DinamicCorse = () => {
       <Teaching data={data}  />
 
       {/* additionals */}
-      <div style={{display: "flex", justifyContent: 'space-between', padding: "3rem", background:'#222B45'}}>
+      <div style={{display: "flex", justifyContent: 'space-around', padding: "3rem", background:'#222B45'}}>
         {data?.additionals?.map((d, i) => (
           <div key={i}>
             <img className='icon-in-image' src={`https://api.softwarevillage.az${d?.image}`} alt="" />
