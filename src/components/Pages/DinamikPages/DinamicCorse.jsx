@@ -38,20 +38,20 @@ const DinamicCorse = () => {
   return (
     <div className='dinamik-container'>
 
-      {/* <DinamikHeader data={data} /> */}
-      {/* <DinamikINfarmation data={data} /> */}
-      {/* <Sillabus data={data} />
-      <Teaching data={data}  /> */}
+      <DinamikHeader data={data} />
+      <DinamikINfarmation data={data} />
+      <Sillabus data={data} />
+      <Teaching data={data}  />
 
       {/* additionals */}
-      {/* <div style={{display: "flex", justifyContent: 'space-between', padding: "3rem", background:'#222B45'}}>
+      <div style={{display: "flex", justifyContent: 'space-between', padding: "3rem", background:'#222B45'}}>
         {data?.additionals?.map((d, i) => (
           <div key={i}>
             <img className='icon-in-image' src={`https://api.softwarevillage.az${d?.image}`} alt="" />
             <p className='clrr'>{d?.name}</p>
           </div>
         ))}
-      </div> */}
+      </div>
       {/* end-additionals */}
 
       <WhyWe className='sillabus-in-why-we'/>

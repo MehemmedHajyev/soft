@@ -859,10 +859,18 @@ body {
     height: 90vh;
 }
 
+.dinamik-page-header {
+    position: relative !important;
+    width: 100%;
+    height: 80vh;
+
+}
 
 
 
-.about-header img {
+
+.about-header img,
+.dinamik-page-header img {
     width: 100%;
     height: 100%;
 }
@@ -1017,7 +1025,7 @@ body {
 
 .about-header-content-for-dinamik {
     max-width: 1170px;
-    margin: 113px auto;
+    margin: 112px auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1039,6 +1047,23 @@ body {
     margin-bottom: 8px;
 }
 
+.about-header-content-for-dinamik-item-for-images {
+    width: 386px;
+    height: 203px;
+}
+
+/* .about-header-content-for-dinamik-item-for-images {
+    width: 100%;
+    height: 100%;
+
+} */
+
+
+.image-img {
+    width: 500px;
+    height: 500px;
+}
+
 .about-header-content-for-dinamik p {
     color: #FFF;
     max-width: 595px;
@@ -1055,6 +1080,7 @@ body {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
+    gap: 30px;
 }
 
 .kurs-cedveli-desc {
@@ -1578,7 +1604,8 @@ span {
     justify-content: space-between;
     flex-wrap: wrap;
     max-width: 1170px;
-    margin: 50px auto;}
+    margin: 50px auto;
+}
 
 .links-container,
 .boot-camps-list {
@@ -1630,12 +1657,13 @@ span {
     cursor: pointer;
     transition: all .5s;
 }
+
 .sosial-links li .sosial-links-svg {
     width: 20px !important;
-        height: 20px !important;
-  }
+    height: 20px !important;
+}
 
-.sosial-links li:hover .sosial-links-svg{
+.sosial-links li:hover .sosial-links-svg {
     transform: rotate(360deg);
     transition: all .5s;
 
@@ -3189,6 +3217,20 @@ span {
     }
 
 
+    .about-header-content-for-dinamik-item {
+        line-height: 10px;
+    }
+
+
+    .dinamik-page-header {
+
+        height: 50vh;
+
+    }
+
+    .about-header-content-for-dinamik {
+        margin: 10px 20px;
+    }
 
 }
 
@@ -3444,20 +3486,19 @@ nav {
 }
 
 .dinamik-infarmation-container {
-    /* display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr)); */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
     max-width: 1170px;
-    margin: 50px auto;
-    /* gap: 10px; */
-    display: flex;
+    margin: 50px 15px;
+    gap: 50px;
+    /* display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
 }
 
 .dinamik-infarmation-container-item {
     min-width: 450px;
-    height: 450px;
 }
 
 .dinamik-infarmation-container-item-content h1 {
@@ -3920,6 +3961,15 @@ nav {
 
 
 
+@media only screen and (max-width:1203px) {
+    .about-header-content-for-dinamik {
+        margin: 112px 50px;
+    }
+
+
+}
+
+
 @media only screen and (max-width:1210px) {
 
     .blog-grid-container,
@@ -3935,11 +3985,12 @@ nav {
     .dpage-one-container,
     .corse-information-container,
     .inputs-containerD,
-    .corse-time,.footer-media-content-container {
+    .corse-time,
+    .footer-media-content-container {
         margin: 30px 10px;
     }
 
-   
+
     .dinamik-infarmation-container,
     .silibus-grid-container {
         margin: 50px 10px;
@@ -3953,7 +4004,8 @@ nav {
     }
 
     .blog-desc-titel-container {
-        margin: 100px 10px;}
+        margin: 100px 10px;
+    }
 
     .bred-swadow-in-content {
         margin-top: 130px;
@@ -4103,14 +4155,14 @@ nav {
 
 
     .dinamik-infarmation-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         max-width: 1170px;
-        margin: 50px auto;
-        /* gap: 10px; */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        width: 100% !important;
+        gap: 50px;
+    }
+    
+    .dinamik-infarmation-container-item {
+        min-width: 300px;
     }
 
 
@@ -4121,6 +4173,21 @@ nav {
     .for-images-teacing {
         width: 100%;
     }
+
+    .dinamig-page-svg {
+        width: 200px;
+        height: 200px;
+    }
+
+    .about-header-content-for-dinamik {
+        margin: 10px 20px;
+    }
+
+    .kurs-cedveli {
+        display: flex;
+        flex-direction: column;
+    }
+
 }
 
 
@@ -4135,10 +4202,12 @@ nav {
         max-width: 100%;
         word-wrap: break-word;
     }
+
     :where(.css-dev-only-do-not-override-1wazalj).ant-input:placeholder-shown {
         text-overflow: ellipsis;
         width: 100%;
     }
+
     .footer-search-container-content-inputs form {
         display: flex;
         align-items: center;
@@ -4242,7 +4311,7 @@ nav {
 
 
     .slick-current .main-carusel-image {
-        top: 0%;
+        top: -33%;
         right: 0%;
         opacity: 1;
         z-index: 99;
@@ -4309,13 +4378,13 @@ nav {
         justify-content: center;
     }
 
-    .footer-media-content-container{
+    .footer-media-content-container {
         flex-direction: column;
         text-align: center;
         justify-content: center;
         align-items: center;
         gap: 20px;
-        }
+    }
 }
 
 
@@ -4724,7 +4793,19 @@ nav {
     }
 
 
+    .about-header-content-for-dinamik-item h1 {
+        font-size: 35px;
+      
+    }
 
+    .muraciyyet-et-btn{
+        padding: 10px 30px;
+    }
+
+    .dinamig-page-svg {
+        width: 150px;
+        height: 150px;
+    }
 
 
 
@@ -4734,13 +4815,7 @@ nav {
 @media only screen and (max-width:410px) {
 
     .slick-current .main-carusel-image {
-        top: 0%;
-        right: 0%;
-        opacity: 1;
-        z-index: 99;
-        display: flex;
-        justify-content: center;
-        width: 200px;
+        width: 150px;
     }
 
     .teaching-container-content-card-container {
