@@ -1,16 +1,12 @@
 import React from 'react'
 import CenterMoodSlider from '../Sliders/CenterMoodSlider'
-import img from '../../assets/img/Logo/Ellipse 3.png'
 import axios from 'axios'
 import { useEffect, useState } from 'react'
-import Link from 'antd/es/typography/Link'
-import { useNavigate } from 'react-router-dom'
 import WeTeamTitle from './WeTeamTitle'
 
 const BASE_URL = 'https://api.softwarevillage.az/api/core/staff';
 
 const WeTeam = () => {
-    const navigate = useNavigate()
 
 
     const [weTeam, setweTeam] = useState([])

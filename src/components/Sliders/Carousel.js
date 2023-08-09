@@ -9,7 +9,7 @@ const Carousel = ({className, children}) => {
         infinite: true,
         // draggable: true,
         fade: true,
-        speed: 2500,
+        speed: 2000,
         touchThreshold: 190,
         slidesToShow: 1,
         slidesToScroll: 1,

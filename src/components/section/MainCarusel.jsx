@@ -39,7 +39,7 @@ const MainCarusel = () => {
     const navigate = useNavigate();
 
     const rout = (() => {
-        navigate("/muraciyyetED");
+        navigate("/muraciyyet-et");
     })
 
 
@@ -65,7 +65,7 @@ const MainCarusel = () => {
                                 {/* <Link to='/muraciyyetED'>
                                 <button>{item.button_text}</button>
                                 </Link> */}
-                                <Link to="muraciyyetED">
+                                <Link to="muraciyyet-et">
                                     <button onClick={() => rout()} >
                                         Müraciət et
                                     </button>

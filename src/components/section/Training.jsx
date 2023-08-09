@@ -4,7 +4,7 @@ import { Link, useNavigate, useParams } from 'react-router-dom'
 
 import axios from 'axios'
 
-const BASE_URL = 'https://api.softwarevillage.az/api/course-home'
+const BASE_URL = 'https://api.softwarevillage.az/api/course'
 
 
 const Training = ({ traningText }) => {

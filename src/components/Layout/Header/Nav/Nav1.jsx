@@ -1,6 +1,3 @@
-
-
-
 import { useRef } from "react";
 import { Link } from "react-router-dom";
 
@@ -25,7 +22,7 @@ function Navbar() {
                 <div className="search-buttons" id="for-responsive-button">
                     <div className="button-container">
 
-                        <Link to="muraciyyetED" onClick={() => showNavbar()}>
+                        <Link to="muraciyyet-et" onClick={() => showNavbar()}>
                             <button  >
                                 Müraciət et
                             </button>
@@ -52,7 +49,7 @@ function Navbar() {
             <div className="search-buttons" id="for-dekstop">
                     <div className="button-container">
 
-                        <Link to="muraciyyetED" onClick={() => showNavbar()}>
+                        <Link to="muraciyyet-et" onClick={() => showNavbar()}>
                             <button> Müraciət et</button>
                         </Link>
 

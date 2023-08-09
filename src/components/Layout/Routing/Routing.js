@@ -53,21 +53,21 @@ const Routing = () => {
                 <Route path="/" element={<Home />}></Route>                 
                 <Route path="/haqqimizda" element={<About />} />
                 <Route path="/telimproqramlari" element={<TelimProqramlariMain />} />
-                <Route path="/telimproqramlari/:slug" element={<TelimProqramlari />} />
+                {/* <Route path="/telimproqramlari/:slug" element={<DinamicCorse />} /> */}
                 <Route path="/kurslar/:slug/" element={<DinamicCorse />} />
                 <Route path="/bloq" element={<Blog />} />
 
                 <Route path="/bloq/:slug" element={<BloqDetail />} />
 
                 <Route path="/kurslar" element={<Corse />} />
-                <Route path="/detailsCourse" element={<DinamicCorse />} />
+                {/* <Route path="/detailsCourse/:slug" element={< />} /> */}
 
                 <Route path="/suallar" element={<Quastion />} />
                 <Route path="/elaqe" element={<Contact />} />
                 {/* <Route path="mobile" element={<MobilePrograming />} /> */}
 
                 {/* <Route path="detail/:slug" element={<TelimProqramlari />} /> */}
-                <Route path="detail/:slug/" element={<Corse />} />
+                <Route path="detail/:slug/" element={<DinamicCorse />} />
 
                 <Route path="*" element={<NoPage />} />
                 <Route path="muraciyyet-et" element={<MuraciyyetED />} />

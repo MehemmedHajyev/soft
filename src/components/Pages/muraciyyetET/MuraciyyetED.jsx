@@ -41,9 +41,9 @@ const MuraciyyetED = () => {
             </div>
             <div className="muraciyyet-main-controls">
                 <div className="form-control-container">
-                  <h1 className='form-control-container-title'>
+                  <h2 className='form-control-container-title'>
                   Sizinlə əlaqəyə keçməyimiz üçün məlumatlarınızı daxil edin 
-                    </h1>
+                    </h2>
                     <MuraciyyetForm />
 
                 </div>

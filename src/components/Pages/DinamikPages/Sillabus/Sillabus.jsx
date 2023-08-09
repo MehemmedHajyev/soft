@@ -7,7 +7,6 @@ const Sillabus = ({ data }) => {
 
       <div className="silibus-grid-container">
        
-
           {data?.syllabus?.map((d, i) => (
              <div className="silibus-grid-container-card">
             <div className="silibus-grid-container-card-content" key={i}>

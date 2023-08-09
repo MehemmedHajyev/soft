@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { Input, Select } from 'antd';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import SosialLInks from './SosialLInks';
+import Logo from '../../../assets/img/Logo/logo.png'
 
 const handleChange = (value) => {
   console.log(`selected ${value}`);
@@ -39,11 +41,14 @@ const Footer2 = () => {
               <form action="" method="post">
 
                 <Input placeholder="Ad Soyadınız" type='text' />
+                
                 <Input placeholder="(055) 000 00 00" type='phone' />
-                <Input placeholder="(055) 000 00 00" type='phone' />
+                <Input placeholder="Kursu seçin"  type='text' />
+              
 
-                <button>Sorğu göndər</button>
-              </form>
+                <Link to="/muraciyyet-et">
+                  <button> Müraciət et</button>
+                </Link></form>
 
             </div>
           </div>
@@ -55,29 +60,37 @@ const Footer2 = () => {
             <div className="footer-logo-and-content-container">
               <div className="footer-logo"><a></a>
                 <Link to='/'>
-                  Logo
+                  <img src={Logo}/>
                 </Link>
               </div>
             </div>
             <div></div>
+
             <ul className="links-container">
-              <li><a><Link to=''>Akademiya haqqında</Link></a></li>
-              <li><a><Link to=''>Missiya və vizyon</Link></a></li>
-              <li><a><Link to=''>Vakansiyalar</Link></a></li>
-              <li><a><Link to=''>Sosial məsuliyyət</Link></a></li>
-              <li><a><Link to=''>Korporativ əməkdaşlıq</Link></a></li>
-              <li><a><Link to=''>Əlaqə</Link></a></li>
+              <li><a> <Link  to="haqqimizda"><a className="item-link">Haqqımızda</a></Link></a></li>
+              <li><a>
+              <Link to="telimproqramlari"><a className="item-link">Təlim proqramları</a></Link>
+                </a></li>
+              <li><a>
+              <Link  to="suallar"><a className="item-link">Suallar</a></Link>
+                </a></li>
+              <li><a>
+              <Link  to="bloq"><a className="item-link">Bloq</a></Link>
+                </a></li>
+              <li><a>
+              <Link  to="elaqe"><a className="item-link">Əlaqə</a></Link>
+                </a></li>
 
 
             </ul>
-            
+
             <ul className="boot-camps-list">
               {data?.map((d, i) => (
                 <li key={i}><a><Link to={`/kurslar/${d?.slug}`}>{d?.title}</Link></a></li>
               ))}
             </ul>
 
-            <ul className="sosial-links">
+            {/* <ul className="sosial-links">
               <li><a><Link to=''>
                 <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M7.25977 8.125H5.20898V14.25H2.47461V8.125H0.232422V5.60938H2.47461V3.66797C2.47461 1.48047 3.78711 0.25 5.7832 0.25C6.74023 0.25 7.75195 0.441406 7.75195 0.441406V2.60156H6.63086C5.53711 2.60156 5.20898 3.25781 5.20898 3.96875V5.60938H7.64258L7.25977 8.125Z" fill="#222B45" />
@@ -110,7 +123,8 @@ const Footer2 = () => {
                   <path d="M3.75391 14.5H0.847656V5.15625H3.75391V14.5ZM2.28516 3.90625C1.37891 3.90625 0.628906 3.125 0.628906 2.1875C0.628906 1.28125 1.37891 0.53125 2.28516 0.53125C3.22266 0.53125 3.97266 1.28125 3.97266 2.1875C3.97266 3.125 3.22266 3.90625 2.28516 3.90625ZM14.5977 14.5H11.7227V9.96875C11.7227 8.875 11.6914 7.5 10.1914 7.5C8.69141 7.5 8.47266 8.65625 8.47266 9.875V14.5H5.56641V5.15625H8.34766V6.4375H8.37891C8.78516 5.71875 9.72266 4.9375 11.1289 4.9375C14.0664 4.9375 14.6289 6.875 14.6289 9.375V14.5H14.5977Z" fill="#222B45" />
                 </svg>
               </Link></a></li>
-            </ul>
+            </ul> */}
+            <SosialLInks />
           </div>
         </div>
       </div>

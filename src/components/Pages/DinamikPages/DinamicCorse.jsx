@@ -5,10 +5,11 @@ import WhyWe from '../../section/WhyWe'
 import DinamikHeader from './DinamikHeader/DinamikHeader'
 import DinamikINfarmation from './DinamikINfarmation/DinamikINfarmation'
 import IsElanlari from './IsElanlari/IsElanlari'
-import Money from './money/Money'
 import Sillabus from './Sillabus/Sillabus'
 import { Link, useParams, useNavigate} from 'react-router-dom'
+import Money from './money/money'
 import axios from 'axios';
+import Teaching from './Teaching/Teaching'
  
 const DinamicCorse = () => {
 
@@ -26,31 +27,35 @@ const DinamicCorse = () => {
 
     })
   }
+  console.log(data.teacher);
   
   useEffect(() => {
     console.log(slug)
+    
     getData();
   }, [])
 
   return (
     <div className='dinamik-container'>
 
-      <DinamikHeader data={data} />
-      <DinamikINfarmation data={data} />
-      <Sillabus data={data} />
+      {/* <DinamikHeader data={data} /> */}
+      {/* <DinamikINfarmation data={data} /> */}
+      {/* <Sillabus data={data} />
+      <Teaching data={data}  /> */}
 
       {/* additionals */}
-      <div style={{display: "flex", justifyContent: 'space-between', padding: "3rem"}}>
+      {/* <div style={{display: "flex", justifyContent: 'space-between', padding: "3rem", background:'#222B45'}}>
         {data?.additionals?.map((d, i) => (
           <div key={i}>
-            <img src={`https://api.softwarevillage.az${d?.image}`} alt="" />
-            <p>{d?.name}</p>
+            <img className='icon-in-image' src={`https://api.softwarevillage.az${d?.image}`} alt="" />
+            <p className='clrr'>{d?.name}</p>
           </div>
         ))}
-      </div>
+      </div> */}
       {/* end-additionals */}
 
       <WhyWe className='sillabus-in-why-we'/>
+      <IsElanlari data={data} />
       <Money data={data} />
 
       <Training traningText={'Digər Kurslar'} />

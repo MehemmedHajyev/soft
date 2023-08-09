@@ -38,7 +38,7 @@ useEffect(() => {
 
         data.map((item)=>(
 
-            <a onClick={() => navigate(`${item.slug}`)} >
+            <a onClick={() => navigate(`/detail/${item.slug}`)} >
 
             <div className="telim-proqramlari-card fulll">
             <div className="telim-proqramlari-card-main">

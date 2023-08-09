@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const Money = ({ data }) => {
   return (
@@ -8,41 +8,23 @@ const Money = ({ data }) => {
         <p>{data?.salary?.description}</p>
       </div>
       <div className="money-card-container">
-
-        <div className="money-card">
-          <div className="money-card-content">
-            <div className="money-card-icon">
-              icon
+        {data?.salary?.items?.map((item, index) => (
+          <div className="money-card" key={index}>
+            <div className="money-card-content">
+              <div className="money-card-icon">
+                {/* <img alt="" /> */}
+                <img className='money-card-icon'
+                src={`https://api.softwarevillage.az${item?.image}`}
+                alt="" />
+              </div>
+              <h2>{item?.title}</h2>
+              <p>{item?.description}</p>
             </div>
-            <h2>$ 10.000</h2>
-            <p>1-3 illik təcrübə ilə </p>
           </div>
-
-        </div>
-    
-        <div className="money-card">
-          <div className="money-card-content">
-            <div className="money-card-icon">
-              icon
-            </div>
-            <h2>$ 10.000</h2>
-            <p>1-3 illik təcrübə ilə </p>
-          </div>
-
-        </div>     <div className="money-card">
-          <div className="money-card-content">
-            <div className="money-card-icon">
-              icon
-            </div>
-            <h2>$ 10.000</h2>
-            <p>1-3 illik təcrübə ilə </p>
-          </div>
-
-        </div>
-
+        ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Money
+export default Money;

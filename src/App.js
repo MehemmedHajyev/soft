@@ -24,11 +24,9 @@ function App() {
      <BrowserRouter>
       <Layout>
         <ScrollToTop />
-        <Routing />
+        <Routing /> 
       </Layout>
-      </BrowserRouter>
-      {/* <DinamicCorse /> */}
-      
+      </BrowserRouter>      
     </>
   );
 }
