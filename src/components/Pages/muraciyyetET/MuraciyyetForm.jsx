@@ -17,13 +17,12 @@ const MuraciyyetForm = () => {
     e.preventDefault();
 
     if (!nameUser || !phoneUser || !emailUser) {
-      message.error('Formu tam doldurun!');
+      message.error(<span style={{ color: 'red' }}>Formu tam doldurun!</span>);
       const failedFieldsIds = [];
       if (!nameUser) failedFieldsIds.push('name');
       if (!phoneUser) failedFieldsIds.push('phone');
       if (!emailUser) failedFieldsIds.push('email');
       if (!selectedOptionId) failedFieldsIds.push('course');
-
       setFailedFields(failedFieldsIds);
       return;
     }

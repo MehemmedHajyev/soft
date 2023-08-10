@@ -18,7 +18,7 @@ const MapForm = () => {
 
       // Input alanlarının değerlerini kontrol etmek için bir şart ekleyelim
       if (!nameUser || !phoneUser || !emailUser || !subjectUser || !messageUser) {
-         message.error('Formu tam  doldurun!');
+         message.error(<span style={{ color: 'red' }}>Formu tam doldurun!</span>);
          // Ekledik: Boş inputlar olduğunda, failedFields state'ine boş inputların id'lerini ekleyin
          const failedFieldsIds = [];
          if (!nameUser) failedFieldsIds.push('name');

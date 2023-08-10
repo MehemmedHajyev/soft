@@ -855,7 +855,7 @@ body {
 .for-detail-breadCramp {
     position: relative;
     width: 100%;
-    height: 90vh;
+    height:60vh;
 }
 
 .dinamik-page-header {
@@ -1329,7 +1329,7 @@ span {
 }
 
 .about-we-home-content {
-    max-width: 970px;
+    max-width: 840px;
     margin-right: auto;
     margin-left: auto;
     display: flex;
@@ -3488,7 +3488,7 @@ nav {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
     max-width: 1170px;
-    margin: 50px 15px;
+    margin: 50px auto;
     gap: 50px;
     /* display: flex;
     align-items: center;
@@ -3527,14 +3527,13 @@ nav {
     margin-top: 16px;
 }
 
-.dinamik-infarmation-container-item-content-for-image {
-    max-width: 450px;
-    height: 388px;
-}
+
 
 .dinamik-infarmation-container-item-content-for-image img {
     width: 100%;
     height: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 16px;
 }
 
 .silibus-container {
@@ -3991,7 +3990,8 @@ nav {
 
 
     .dinamik-infarmation-container,
-    .silibus-grid-container {
+    .silibus-grid-container,
+    .dinamik-infarmation-container {
         margin: 50px 10px;
     }
 

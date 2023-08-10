@@ -39,8 +39,6 @@ const Bloq = () => {
 
      />
 
-
-      
       <BloqContent />
       <Partniyorlar />
     </>
