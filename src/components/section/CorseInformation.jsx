@@ -22,7 +22,7 @@ const CorseInformation = () => {
 
     useEffect(() => {
         getCourseDetail()
-    }, [ getCourseDetail])
+    }, [])
 
     return (
         <div className='corse-information-container'>

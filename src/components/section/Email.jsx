@@ -18,7 +18,6 @@ export const Email = () => {
 
     useEffect(() => {
         getemail()
-        console.log('salam');
     }, [])
 
     

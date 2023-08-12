@@ -22,7 +22,7 @@ const DpageOne = () => {
 
     useEffect(() => {
         getCourseDetail()
-    }, [getCourseDetail])
+    }, [])
     return (
         <div
             className='dpage-one-container'>
