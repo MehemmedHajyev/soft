@@ -22,7 +22,7 @@ const ImageCards = () => {
 
     useEffect(() => {
         getCourseDetail()
-    }, [])
+    }, [ getCourseDetail])
 return (
         <>
             <div className="ImageCards-main">

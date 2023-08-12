@@ -31,7 +31,7 @@ const DinamicCorse = () => {
   useEffect(() => {
     
     getData();
-  }, [])
+  }, [ getData])
 
   return (
     <div className='dinamik-container'>
