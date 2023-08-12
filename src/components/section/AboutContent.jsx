@@ -25,7 +25,6 @@ const HomeAbout = () => {
 
     return (
         <div className='homeAbout'>
-            <h3></h3>
             <div className="grid-container">
             <div className="grid-card">
                     <div className="home-about-image-grid-card">

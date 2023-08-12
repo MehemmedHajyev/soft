@@ -1,5 +1,5 @@
 
-import React, { useEffect, useState } from 'react'
+import React, { useEffect} from 'react'
 import axios from 'axios'
 import { Routes, Route } from "react-router-dom";
 import Home from '../../Pages/Home/Home';
@@ -19,30 +19,20 @@ const BASE_URL = 'https://api.softwarevillage.az/api/training-programs'
 
 
 const Routing = () => {
-    const [products, setProducts] = useState([])
 
     const handleGetProducts = async () => {
-        const res = await axios.get(BASE_URL)
-        const data = res.data
-        setProducts(data)
-    }
+        try {
+            const res = await axios.get(BASE_URL);
+            const data = res.data;
+        } catch (error) {
+            console.error("Error fetching data:", error);
+        }
+    };
+
     useEffect(() => {
-        handleGetProducts()
-    }, [])
-
-    const [offset, setOffSet] = useState(0)
-    // useEffect(() => {
-    //     const handleScroll = (e) => {
-    //         const scrolHeight = e.target.documentElement.scrolHeight
-    //         const currentHeight = e.target.documentElement.scrollTop + window.innerHeight
-    //         if (currentHeight + 1 >= scrolHeight) {
-    //             setOffSet(offset + 10)
-    //         }
-    //     }
-    //     window.addEventListener('load', handleScroll)
-    //     return () => window.removeEventListener('load')
-    // }, [])
-
+        handleGetProducts();
+    }, []);
+   
 
     return (
             <React.Fragment >

@@ -14,11 +14,9 @@ const AboutConnactionsCart = () => {
         const data = await res.data
         setphone(data)
     }
-    console.log(phone, 'about ');
 
     useEffect(() => {
         getphone()
-        console.log('salam');
     }, [])
 
 

@@ -18,7 +18,7 @@ const CorseTime = () => {
 
     useEffect(() => {
         getCourseDetail()
-    }, [ getCourseDetail])
+    }, [])
     return (
         <div className="corse-time-main">
             <div className='corse-time'>

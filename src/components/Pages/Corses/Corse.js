@@ -23,7 +23,6 @@ const Corse = (traningText) => {
 
   useEffect(() => {
     getcorseContent()
-      console.log('salam');
   }, [])
 
   

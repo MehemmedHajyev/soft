@@ -28,7 +28,6 @@ const MobilePrograming = () => {
 
     useEffect(() => {
         getData()
-        console.log(slug)
     }, []);
 
     return (

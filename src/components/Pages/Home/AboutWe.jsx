@@ -39,7 +39,7 @@ const AboutWe = () => {
     return (
         <div className='about-we-home'>
             <div className="about-we-home-content">
-                {digits.map((item) => (
+                {digits.map((item, index) => (
                     <CountComp
                         key={item.id}
                         item={item}
@@ -47,6 +47,7 @@ const AboutWe = () => {
                         count={item?.number > 400 ? item?.number - 100 : 0}
                     />
                 ))}
+
             </div>
         </div>
     );

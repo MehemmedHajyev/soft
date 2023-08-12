@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
 
 import axios from 'axios'
 
@@ -20,7 +19,7 @@ const CorseEducetion = () => {
 
     useEffect(() => {
         getCourseDetail()
-    }, [getCourseDetail])
+    }, [])
 
 
     return (
@@ -70,7 +69,6 @@ const CorseEducetion = () => {
                         <div className="card-in-card-img">
                             <img
                                 src={`https://api.softwarevillage.az${item?.image}`}
-                                alt={`Image for ${item?.title}`}
                             />
                         </div>
                         <div className="card-in-card-content">

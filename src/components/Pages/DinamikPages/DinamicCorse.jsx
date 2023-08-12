@@ -29,10 +29,9 @@ const DinamicCorse = () => {
   console.log(data.teacher);
   
   useEffect(() => {
-    console.log(slug)
     
     getData();
-  }, [])
+  }, [ getData])
 
   return (
     <div className='dinamik-container'>

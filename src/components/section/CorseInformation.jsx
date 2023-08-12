@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 
 import axios from 'axios'
+import { useCallback } from 'react'
 
 const CorseInformation = () => {
 
@@ -12,16 +13,16 @@ const CorseInformation = () => {
 
     const [courseDetail, setCourseDetail] = useState([])
 
-    const getCourseDetail = async () => {
-        const res = await axios(BASE_URL)
-        const data = await res.data
-        setCourseDetail(data)
-    }
+    const getCourseDetail = useCallback(async () => {
+        const res = await axios.get(BASE_URL);
+        const data = await res.data;
+        setCourseDetail(data);
+    }, []);
     console.log(courseDetail);
 
     useEffect(() => {
         getCourseDetail()
-    }, [getCourseDetail])
+    }, [ getCourseDetail])
 
     return (
         <div className='corse-information-container'>

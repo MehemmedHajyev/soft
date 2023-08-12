@@ -10,7 +10,7 @@ const MuraciyyetForm = () => {
   const [selectedOptionId, setSelectedOptionId] = useState(''); // Güncellendi: selectedOptionId'nin başlangıç değeri boş string
 
   const [failedFields, setFailedFields] = useState([]);
-  const [modalVisible, setModalVisible] = useState(false);
+  // const [modalVisible, setModalVisible] = useState(false);
   const [options, setOptions] = useState([]);
 
   const handleSubmit = async (e) => {
@@ -30,7 +30,7 @@ const MuraciyyetForm = () => {
 
 
     try {
-      const option = options.find((item) => item.title == selectedOptionId)
+      const option = options.find((item) => item.title === selectedOptionId)
 
       const formData = {
         name: nameUser,
@@ -42,7 +42,7 @@ const MuraciyyetForm = () => {
       console.log(formData);
       await axios.post('https://api.softwarevillage.az/api/course-apply', formData);
       message.success('Mesaj uğurla gönderildi!');
-      setModalVisible(true);
+      // setModalVisible(true);
       setFailedFields([]);
       setName('');
       setEmail('');

@@ -1,12 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
-import {useNavigate} from 'react-router-dom'
 import TelimProqramHome from './TelimProqramHome'
 
 
 const TelimProqramlariMain = ({ products }) => {
 
-    const navigate = useNavigate()
     
 
 const [data, setData] = useState([])
@@ -39,9 +37,7 @@ useEffect(() => {
           <div className="telim-proqramlari-card-icons">
             <img
               src={`https://api.softwarevillage.az${item?.main_image}`}
-              className="header-img"
-              alt={`Image for ${item?.title}`}
-            />
+              className="header-img" />
           </div>
           <div className="telim-proqramlari-card-desc">
             <h6>{item?.title}</h6>

@@ -14,11 +14,9 @@ export const WhatsappCard = () => {
         const data = await res.data
         setwhatsapp(data)
     }
-    console.log(whatsapp, 'about ');
 
     useEffect(() => {
         getwhatsapp()
-        console.log('salam');
     }, [])
 
 
