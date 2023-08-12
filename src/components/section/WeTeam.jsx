@@ -32,7 +32,7 @@ const WeTeam = () => {
            
             <CenterMoodSlider className="center-mood-slider">
 
-                {
+                {/* {
                     weTeam.map((item) => (
                         <div className='item'>
                             <div>
@@ -66,7 +66,30 @@ const WeTeam = () => {
                         </div>
                     ))
 
-                }
+                } */}
+                {weTeam.map((item, index) => (
+  <div key={index} className='item'>
+    <div>
+      <div className="item-inner-images">
+        <img src={`https://api.softwarevillage.az${item?.image}`} alt={`Image for ${item?.title}`} />
+      </div>
+    </div>
+
+    <div className="center-mood-slider-icons">
+      {item.social.map((socialNet, socialIndex) => (
+        <a key={socialIndex} href={socialNet.social_link}>
+          <div className='icnss' dangerouslySetInnerHTML={{ __html: socialNet.social_image }} />
+        </a>
+      ))}
+    </div>
+
+    <div className='center-mood-slider-information'>
+      <h1>{item.title}</h1>
+      <p>{item.position}</p>
+    </div>
+  </div>
+))}
+
 
 
 

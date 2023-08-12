@@ -4857,4 +4857,8 @@ nav {
     border-radius: 16px;
 }
 
+.ant-select-selection-item{
+    color: #000;
+}
+
 /* ///Responsive End */

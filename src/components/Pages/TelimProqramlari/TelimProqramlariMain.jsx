@@ -31,86 +31,33 @@ useEffect(() => {
      <TelimProqramHome />
      
         <div className='telim-proqramlari-container'>
-        {
-
-        data.map((item)=>(
-
-            <a onClick={() => navigate(`/detail/${item.slug}`)} >
-
-            <div className="telim-proqramlari-card fulll">
-            <div className="telim-proqramlari-card-main">
-            <div className="telim-proqramlari-card-content">
-                <div className="telim-proqramlari-card-icons">
-                    <img src={`https://api.softwarevillage.az${item?.main_image}`}
-                        className="header-img" />
-                </div>
-                <div className="telim-proqramlari-card-desc">
-                    <h6>{item?.title}</h6>
-                </div>
-            
-            </div>
-           
-            </div>
-            <div className="telim-proqramlari-card-duration">
-                    <p>
-                        <span>Müddəti:</span>
-                        <span>{item?.duration}</span>
-                    </p>
-                </div>
-            
+        {data.map((item) => (
+  <div key={item.id} className="telim-proqramlari-card fulll">
+    <a href={`/detail/${item.slug}`}>
+      <div className="telim-proqramlari-card-main">
+        <div className="telim-proqramlari-card-content">
+          <div className="telim-proqramlari-card-icons">
+            <img
+              src={`https://api.softwarevillage.az${item?.main_image}`}
+              className="header-img"
+              alt={`Image for ${item?.title}`}
+            />
+          </div>
+          <div className="telim-proqramlari-card-desc">
+            <h6>{item?.title}</h6>
+          </div>
         </div>
-        </a>
-        ))
-        }
+      </div>
+      <div className="telim-proqramlari-card-duration">
+        <p>
+          <span>Müddəti:</span>
+          <span>{item?.duration}</span>
+        </p>
+      </div>
+    </a>
+  </div>
+))}
 
-
-         
-
-            {/* <div className="telim-proqramlari-card fulll">
-                <div className="telim-proqramlari-card-main">
-                <div className="telim-proqramlari-card-content">
-                    <div className="telim-proqramlari-card-icons">
-
-                    </div>
-                    <div className="telim-proqramlari-card-desc">
-                        <h6>Full-Stack JavaScript MERN</h6>
-                    </div>
-                
-                </div>
-               
-                </div>
-                <div className="telim-proqramlari-card-duration">
-                        <p>
-                            <span>Müddət:</span>
-                            <span>12 ay</span>
-                        </p>
-                    </div>
-                
-            </div>
-           
-
-
-            <div className="telim-proqramlari-card fulll">
-                <div className="telim-proqramlari-card-main">
-                <div className="telim-proqramlari-card-content">
-                    <div className="telim-proqramlari-card-icons">
-
-                    </div>
-                    <div className="telim-proqramlari-card-desc">
-                        <h6>Full-Stack JavaScript MERN</h6>
-                    </div>
-                
-                </div>
-               
-                </div>
-                <div className="telim-proqramlari-card-duration">
-                        <p>
-                            <span>Müddət:</span>
-                            <span>12 ay</span>
-                        </p>
-                    </div>
-                
-            </div> */}
         </div>
 
 

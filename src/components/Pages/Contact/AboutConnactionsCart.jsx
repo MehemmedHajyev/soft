@@ -38,14 +38,9 @@ const AboutConnactionsCart = () => {
                     </div>
                     <div className='aboutConnactionsCart-content-desc'>
                         <h4>Əlaqə nömrəsi</h4>
-                        {
-
-                            phone?.map((item) => (
-
-
-                                <p>{item.phone}</p>
-                            ))
-                        }
+                        {phone?.map((index,item) => (
+                            <p key={index}>{item}</p>
+                        ))}
 
                     </div>
 

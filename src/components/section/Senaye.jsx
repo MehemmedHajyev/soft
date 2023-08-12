@@ -27,19 +27,18 @@ const Senaye = () => {
             <h1>    Sənayedə orta qazanc
             </h1>
             <div className='sanaye-container'>
-                {
-                    courseDetail.profit?.map((item) => (
-                        <div className="sanaye-card">
-                        <div className="sanaye-card-content">
-                            <div className="sanaye-card-content-svg">
-                            <img src={`https://api.softwarevillage.az${item?.image}`} />
-                            </div>
-                            <p className="sanaye-card-content-title">{item?.title}</p>
-                            <p className="sanaye-card-content-desc">{item?.description}</p>
-                        </div>
-                    </div>   
-                    ))
-                }        
+            {courseDetail.profit?.map((item, index) => (
+  <div key={index} className="sanaye-card">
+    <div className="sanaye-card-content">
+      <div className="sanaye-card-content-svg">
+        <img src={`https://api.softwarevillage.az${item?.image}`} alt={`Image for ${item?.title}`} />
+      </div>
+      <p className="sanaye-card-content-title">{item?.title}</p>
+      <p className="sanaye-card-content-desc">{item?.description}</p>
+    </div>
+  </div>
+))}
+   
             </div>
         </div>
         </>

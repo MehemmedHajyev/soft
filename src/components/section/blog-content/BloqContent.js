@@ -20,8 +20,8 @@ const BloqContent = () => {
         <div>
          <div className='blog-grid-container'>
     {
-        blogs.map((blog) => (
-            <div className="blog-grid-card">
+        blogs.map((index,blog) => (
+            <div key={index} className="blog-grid-card">
                 <img src={`https://api.softwarevillage.az${blog.image}`} alt="" />
                 <p className='blog-grid-card-title'>{blog.title}</p>
                 <div className="button-date-container">

@@ -46,42 +46,32 @@ const MainCarusel = () => {
 
     return (
         <Carousel className='main-carusel'>
-            {mainSlider.map((item) => (
-                <div className='carousel-item'>
-                    <div className='main-carusel-information'>
-                        <div className='main-carusel-description'>
-                            <p className="main-carusel-title">
-                                {/* Xəyalındakı <span>texnoloji</span>
-                                kariyeran üçün hərəkətə keç! */}
-                                {item.title}
-                            </p>
-                            <div>
-                                <p className="main-carusel-paragraf">
-                                    {item.text}
-                                </p>
-                            </div>
-                            <div className="main-carusel-button">
-
-                                {/* <Link to='/muraciyyetED'>
-                                <button>{item.button_text}</button>
-                                </Link> */}
-                                <Link to="muraciyyet-et">
-                                    <button onClick={() => rout()} >
-                                        Müraciət et
-                                    </button>
-                                </Link>
-                            </div>
-                        </div>
-                        <div className='main-carusel-image'>
-                            <img src={`https://api.softwarevillage.az${item.image}`} alt="" />
-
-
-                        </div>
-
-                    </div>
-
-                </div>
-            ))}
+          {mainSlider.map((item, index) => (
+  <div key={index} className='carousel-item'>
+    <div className='main-carusel-information'>
+      <div className='main-carusel-description'>
+        <p className="main-carusel-title">
+          {item.title}
+        </p>
+        <div>
+          <p className="main-carusel-paragraf">
+            {item.text}
+          </p>
+        </div>
+        <div className="main-carusel-button">
+          <Link to="muraciyyet-et">
+            <button onClick={() => rout()}>
+              Müraciət et
+            </button>
+          </Link>
+        </div>
+      </div>
+      <div className='main-carusel-image'>
+        <img src={`https://api.softwarevillage.az${item.image}`} alt={`Image for ${item.title}`} />
+      </div>
+    </div>
+  </div>
+))}
 
 
 

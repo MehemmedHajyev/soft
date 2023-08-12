@@ -19,22 +19,19 @@ const Banners = () => {
     return (
         <div>
             <div className="banners-container">
-                {
-                    training.map((item) => (
-                        <div className="banner-card">
-                            <img src={item?.image} alt="" />
-                            <div className="banner-img-shadow">
-                                <h1>{item.title}</h1>
-                                <p>{item.text}</p>
-                                <a href="muraciyyet-et">
-                                    <button>Müraciət et</button>
-                                </a>
+            {training.map((item, index) => (
+  <div key={index} className="banner-card">
+    <img src={item?.image} alt={`Image for ${item?.title}`} />
+    <div className="banner-img-shadow">
+      <h1>{item.title}</h1>
+      <p>{item.text}</p>
+      <a href="muraciyyet-et">
+        <button>Müraciət et</button>
+      </a>
+    </div>
+  </div>
+))}
 
-                            </div>
-
-                        </div>
-                    ))
-                }
 
 
 

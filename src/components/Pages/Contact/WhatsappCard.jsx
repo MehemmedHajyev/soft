@@ -24,8 +24,8 @@ export const WhatsappCard = () => {
 
     return (
         <div>
-          
-          <div className="aboutConnactionsCart">
+
+            <div className="aboutConnactionsCart">
                 <div className="aboutConnactionsCart-content">
                     <div className="aboutConnactionsCart-content-icon">
                         <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -40,10 +40,10 @@ export const WhatsappCard = () => {
 
                         {
 
-whatsapp?.map((item) => (
+                            whatsapp?.map((index,item) => (
 
 
-                                <p>{item.wp_number}</p>
+                                <p key={index}>{item.wp_number}</p>
                             ))
                         }
 

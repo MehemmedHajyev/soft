@@ -34,13 +34,18 @@ const AboutWe = () => {
         getDigits();
     }, []);
 
-  
- 
+
+
     return (
         <div className='about-we-home'>
             <div className="about-we-home-content">
                 {digits.map((item) => (
-                   <CountComp item={item} countValue={item?.number} count={item?.number >400?item?.number-100 : 0} />
+                    <CountComp
+                        key={item.id}
+                        item={item}
+                        countValue={item?.number}
+                        count={item?.number > 400 ? item?.number - 100 : 0}
+                    />
                 ))}
             </div>
         </div>

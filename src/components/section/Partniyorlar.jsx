@@ -32,8 +32,8 @@ const Partniyorlar = () => {
             </div>
             <PartniyorSlider className='partniyorlar-slider-container' >
                 {
-                    partnyor.map((item) => (
-                        <div className='partniyorlar-slider-item'>
+                    partnyor.map((index,item) => (
+                        <div key={index} className='partniyorlar-slider-item'>
                             <img src={`https://api.softwarevillage.az${item.image}`} alt={item.name} />
                         </div>
                     ))

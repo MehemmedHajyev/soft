@@ -40,10 +40,10 @@ export const Email = () => {
 
                         {
 
-                            email?.map((item) => (
+                            email?.map((index,item) => (
 
 
-                                <p>{item.email}</p>
+                                <p key={index}>{item.email}</p>
                             ))
                         }
 

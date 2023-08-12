@@ -28,22 +28,19 @@ const Training = ({ traningText }) => {
 
     <TrainingSlider className="traainig-container">
 
-      {
-        training.map((item) => (
-          <a onClick={() => navigate(`/detail/${item.slug}`)} >
-            <div className='trainig-card' >
-              <div className="trainig-card-content">
-                <h3>{item.title}</h3>
-              </div>
+    {training.map((item, index) => (
+  <a key={index} onClick={() => navigate(`/detail/${item.slug}`)} >
+    <div className='trainig-card' >
+      <div className="trainig-card-content">
+        <h3>{item.title}</h3>
+      </div>
+      <div className="trainig-card-icons locktrainig-card-icons lock">
+        <img src={`https://api.softwarevillage.az${item?.main_image}`} alt={`Image for ${item.title}`} />
+      </div>
+    </div>
+  </a>
+))}
 
-
-              <div className="trainig-card-icons locktrainig-card-icons lock">
-                <img src= {`https://api.softwarevillage.az${item?.main_image}`} alt="" />
-              </div>
-            </div>
-          </a>
-        ))
-      }
 
     </TrainingSlider>
   </>

@@ -22,24 +22,19 @@ const CorseTime = () => {
     return (
         <div className="corse-time-main">
             <div className='corse-time'>
-            {courseDetail.additionals?.map((item) => (
-                <div className="corse-time-icon">
-                <div className="corse-time-content">
-                    <div className="corse-time-svg">
-                   
+            {courseDetail.additionals?.map((item, index) => (
+  <div key={index} className="corse-time-icon">
+    <div className="corse-time-content">
+      <div className="corse-time-title">
+        {item?.name}
+      </div>
+      <div className="corse-time-title">
+        {item?.value}
+      </div>
+    </div>
+  </div>
+))}
 
-
-                    </div>
-                    <div className="corse-time-title">
-                        {item?.name}
-                    </div>
-                    <div className="corse-time-title">
-                        {item?.value}
-                    </div>
-                </div>
-
-            </div>
-            ))}
         </div>
         </div>
         

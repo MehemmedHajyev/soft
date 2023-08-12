@@ -23,8 +23,8 @@ const WhyWe2 = () => {
         <div className="why-we-container-main">
             <div className='why-we-container'>
                 {
-                    whyWe.map((item) => (
-                        <div className="why-we-item-content">
+                    whyWe.map((index,item) => (
+                        <div key={index} className="why-we-item-content">
                             <div className="why-we-item-icon">
                                 <img src={`https://api.softwarevillage.az${item.image}`} alt="" />
                             </div>

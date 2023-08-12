@@ -21,7 +21,7 @@ const CorseInformation = () => {
 
     useEffect(() => {
         getCourseDetail()
-    }, [ getCourseDetail])
+    }, [getCourseDetail])
 
     return (
         <div className='corse-information-container'>
@@ -35,18 +35,29 @@ const CorseInformation = () => {
                     <h1>{courseDetail?.title} təlimində nə öyrənəcəksiniz?</h1>
 
                     <ul className="corese-infarmetion">
-                        { courseDetail.properties?.map((item) => (
-                            <li className='i'><svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g id="Group 37510">
-                                <path id="Vector" fill-rule="evenodd" clip-rule="evenodd" d="M11.5 0C5.15752 0 0 5.15783 0 11.5C0 17.8425 5.15752 23 11.5 23C17.8425 23 23 17.8425 23 11.5C23 5.15783 17.8425 0 11.5 0Z" fill="#23A6F0" />
-                                <g id="Group">
-                                    <path id="Vector_2" d="M16.5299 7.05273L10.1512 13.1247L6.50191 9.4754L4.75391 11.1927L9.26191 15.7007C9.50724 15.9461 9.81391 16.0687 10.1206 16.0687C10.4272 16.0687 10.7339 15.9461 10.9792 15.7314L18.2472 8.8314L16.5299 7.05273Z" fill="white" />
-                                </g>
-                            </g>
-                        </svg>
-                            {item.name}
-                        </li>
+                        {courseDetail.properties?.map((item, index) => (
+                            <li key={index} className='i'>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width={23}
+                                    height={23}
+                                    fill="none"
+                                >
+                                    <path
+                                        fill="#23A6F0"
+                                        fillRule="evenodd"
+                                        d="M11.5 0C5.158 0 0 5.158 0 11.5 0 17.843 5.158 23 11.5 23 17.843 23 23 17.843 23 11.5 23 5.158 17.843 0 11.5 0Z"
+                                        clipRule="evenodd"
+                                    />
+                                    <path
+                                        fill="#fff"
+                                        d="m16.53 7.053-6.379 6.072-3.65-3.65-1.747 1.718L9.262 15.7c.245.245.552.368.859.368.306 0 .613-.123.858-.338l7.268-6.9-1.717-1.778Z"
+                                    />
+                                </svg>
+                                {item.name}
+                            </li>
                         ))}
+
                         <button className='corese-infarmetion-btn' href="#" >Muraciyet et</button>
                     </ul>
                 </div>

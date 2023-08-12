@@ -29,17 +29,15 @@ return (
                 <h1>Sizi nələr gözləyir?</h1>
                 <div className="ImageCards-container">
 
-                    {
-                        courseDetail.future_plan?.map((item) => (
-                            <div className="ImageCards-container-card">
-                                <img src={`https://api.softwarevillage.az${item?.image}`} alt="" />
-                                <div className="ImageCards-container-card-hover-content">
-                                <p>{item?.title}</p>  
-
-                                </div>
-                            </div>  
-                        ))
-                    }            
+                {courseDetail.future_plan?.map((item, index) => (
+  <div key={index} className="ImageCards-container-card">
+    <img src={`https://api.softwarevillage.az${item?.image}`} alt={`Image for ${item?.title}`} />
+    <div className="ImageCards-container-card-hover-content">
+      <p>{item?.title}</p>
+    </div>
+  </div>
+))}
+        
 
                 </div>
 
