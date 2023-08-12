@@ -1,8 +1,6 @@
 import axios from 'axios'
 import { useEffect, useState } from 'react';
 import PartniyorSlider from '../Sliders/PartniyorSlider';
-import Img from '../../assets/img/partniyorlar/digital_marketing_institute.jpeg'
-
 const BASE_URL = 'https://api.softwarevillage.az/api/core/partners';
 
 

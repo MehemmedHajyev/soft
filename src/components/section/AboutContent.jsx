@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import imgAbout from '../../assets/img/home-in-about-img/image.png';
-import { Link } from "react-router-dom";
 import axios from 'axios';
 
 
@@ -13,7 +11,7 @@ const HomeAbout = () => {
     const [aboutContent, setaboutContent] = useState({})
 
     const getaboutContent = async () => {
-        const res = await axios(BASE_URL)
+        const res = await axios.get(BASE_URL)
         const data = await res.data
         setaboutContent(data)
     }

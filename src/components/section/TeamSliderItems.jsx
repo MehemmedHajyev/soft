@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import TeamSlider from '../Sliders/TeamSlider';
-import img from '../../assets/img/slider-right-img/img2.png'
 import axios from 'axios';
 import TeamSliderText from './TeamSliderText';
 const BASE_URL = 'https://api.softwarevillage.az/api/core/students'

@@ -1,7 +1,6 @@
-import img from '../../assets/img/blog-card-img/img.png'
 
 import React, { useEffect, useState } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import {useParams } from 'react-router-dom'
 
 import axios from 'axios'
 
@@ -23,7 +22,7 @@ const DpageOne = () => {
 
     useEffect(() => {
         getCourseDetail()
-    }, [])
+    }, [getCourseDetail])
     return (
         <div
             className='dpage-one-container'>

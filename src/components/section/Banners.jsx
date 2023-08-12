@@ -1,8 +1,6 @@
 import React, { useEffect } from 'react'
-import img from '../../assets/img/blog-card-img/img.png';
 import { useState } from 'react';
 import axios from 'axios';
-import Link from 'antd/es/typography/Link';
 const BASE_URL = 'https://api.softwarevillage.az/api/core/personal-programs'
 
 
@@ -24,12 +22,12 @@ const Banners = () => {
                 {
                     training.map((item) => (
                         <div className="banner-card">
-                            <img src={img} alt="" />
+                            <img src={item?.image} alt="" />
                             <div className="banner-img-shadow">
                                 <h1>{item.title}</h1>
                                 <p>{item.text}</p>
                                 <a href="muraciyyet-et">
-                                <button>Müraciət et</button>
+                                    <button>Müraciət et</button>
                                 </a>
 
                             </div>

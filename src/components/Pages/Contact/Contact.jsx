@@ -1,4 +1,3 @@
-import img from '../../../assets/img/header-imgs/about-bcg.png';
 import AboutConnactionsCart from './AboutConnactionsCart';
 import MapForm from './MapForm';
 import BredCramp from '../../section/BredCramp/BredCramp'

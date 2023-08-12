@@ -1,5 +1,4 @@
 import React from 'react'
-import img from '../../../../assets/img/card-img/M3_integrations_all_integrations.png.png'
 
 const Teaching = ({data}) => {
   return (

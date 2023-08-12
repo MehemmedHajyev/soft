@@ -1,12 +1,11 @@
 import React, {useEffect, useState} from 'react'
-import CorseTime from '../../section/CorseTime'
 import Training from '../../section/Training'
 import WhyWe from '../../section/WhyWe'
 import DinamikHeader from './DinamikHeader/DinamikHeader'
 import DinamikINfarmation from './DinamikINfarmation/DinamikINfarmation'
 import IsElanlari from './IsElanlari/IsElanlari'
 import Sillabus from './Sillabus/Sillabus'
-import { Link, useParams, useNavigate} from 'react-router-dom'
+import { useParams} from 'react-router-dom'
 import Money from './money/money'
 import axios from 'axios';
 import Teaching from './Teaching/Teaching'

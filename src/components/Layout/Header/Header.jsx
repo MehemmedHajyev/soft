@@ -1,4 +1,3 @@
-import Logo from '../../../assets/img/Logo/logo.png';
 import Nav1 from './Nav/Nav1'
 import { Link } from "react-router-dom";
 import axios from 'axios'

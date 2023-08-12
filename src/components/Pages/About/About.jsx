@@ -1,6 +1,5 @@
 
 
-import HomeAbout from '../../section/HomeAbout'
 import WeMission from '../../section/WeMission'
 import WeOurDifference from '../../section/WeOurDifference'
 import WhyWe from '../../section/WhyWe'

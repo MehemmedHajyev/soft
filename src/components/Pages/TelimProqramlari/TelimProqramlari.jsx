@@ -1,9 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
-
-import BredCrampDetails from '../../section/BredCrampDetails/BredCrampDetails'
-import img1 from '../../../assets/img/header-imgs/about-bcg.png'
-import { Link, useParams, useNavigate} from 'react-router-dom'
+import { useParams, useNavigate} from 'react-router-dom'
 
 import BredCramp from '../../section/BredCramp/BredCramp'
 
@@ -28,12 +25,10 @@ const getData = async () => {
 
 useEffect(() => {
     getData()
-    console.log(slug)
 }, []);
     
     return (
         <>
-     {/* <TelimProqramHome /> */}
      <BredCramp
 
             title={data.title}

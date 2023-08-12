@@ -1,9 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
-
-import BredCrampDetails from '../../section/BredCrampDetails/BredCrampDetails'
-import img1 from '../../../assets/img/header-imgs/about-bcg.png'
-import { Link, useNavigate} from 'react-router-dom'
+import {useNavigate} from 'react-router-dom'
 import TelimProqramHome from './TelimProqramHome'
 
 

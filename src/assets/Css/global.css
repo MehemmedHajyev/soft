@@ -1780,99 +1780,6 @@ span {
 
 }
 
-.water-container:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('../svgs/Rectangle.svg');
-    background-position: bottom center;
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    z-index: 1;
-}
-
-.water-container-content {
-    position: absolute;
-    top: 200px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    z-index: 9999;
-}
-
-/* .footer-title {
-    color: rgba(0, 0, 0, 0.87);
-    text-align: center;
-    font-size: 24px;
-    font-family: Mulish;
-    line-height: 33px;
-}
-
-.footer-list {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 58px;
-}
-
-.footer-list li a {
-    cursor: pointer;
-    color: #273150;
-    font-size: 18px;
-    font-family: Mulish;
-}
-
-.footer-search-container {
-    margin-top: 23px;
-    margin-bottom: 40px;
-    border-radius: 23.25px;
-    border: 1px solid #4E4E50;
-    background: #FFF;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-}
-
-.footer-search-container input {
-    border: none;
-    outline: none;
-    background: none;
-    width: 100%;
-}
-
-.footer-search-container input::placeholder {
-    color: #4E4E50;
-    font-size: 16px;
-    font-family: Mulish;
-}
-
-.footer-search-container button {
-    color: #FFF;
-    font-size: 16px;
-    font-family: Mulish;
-    padding: 4px 30px;
-    border-radius: 23.25px;
-    background: #2196F3;
-    border: none;
-    outline: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-} */
-
-.container {
-    background-color: rgba(174, 217, 251, .55);
-    height: 100px;
-}
 
 
 
@@ -4699,10 +4606,7 @@ nav {
         width: 100%;
     }
 
-    /* .footer-list {
-
-        flex-direction: column;
-    } */
+   
 
     .container {
         height: 500px !important;

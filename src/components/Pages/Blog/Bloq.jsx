@@ -1,6 +1,4 @@
 import React from 'react';
-
-import img1 from '../../../assets/img/header-imgs/about-bcg.png'
 import BloqContent from '../../section/blog-content/BloqContent';
 import BredCramp from '../../section/BredCramp/BredCramp'
 

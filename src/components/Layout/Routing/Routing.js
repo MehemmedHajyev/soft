@@ -6,16 +6,13 @@ import Home from '../../Pages/Home/Home';
 import Blog from '../../Pages/Blog/Bloq'
 import Contact from '../../Pages/Contact/Contact'
 import Quastion from '../../Pages/Suallar/Quastion';
-// import MobilePrograming from '../../Pages/MobilePrograming/MobilePrograming';
 import About from '../../Pages/About/About';
 import NoPage from '../../Pages/NoPage/NoPage';
 import Corse from '../../Pages/Corses/Corse';
 import DinamicCorse from '../../Pages/DinamikPages/DinamicCorse';
-import TelimProqramlari from '../../Pages/TelimProqramlari/TelimProqramlari';
 import TelimProqramlariMain from '../../Pages/TelimProqramlari/TelimProqramlariMain';
 import BloqDetail from '../../Pages/BlogDetail/BloqDetail'
 import MuraciyyetED from '../../Pages/muraciyyetET/MuraciyyetED';
-import ScrollToTop from './ScrollTop';
 
 const BASE_URL = 'https://api.softwarevillage.az/api/training-programs'
 
@@ -34,17 +31,17 @@ const Routing = () => {
     }, [])
 
     const [offset, setOffSet] = useState(0)
-    useEffect(() => {
-        const handleScroll = (e) => {
-            const scrolHeight = e.target.documentElement.scrolHeight
-            const currentHeight = e.target.documentElement.scrollTop + window.innerHeight
-            if (currentHeight + 1 >= scrolHeight) {
-                setOffSet(offset + 10)
-            }
-        }
-        window.addEventListener('load', handleScroll)
-        return () => window.removeEventListener('load')
-    }, [])
+    // useEffect(() => {
+    //     const handleScroll = (e) => {
+    //         const scrolHeight = e.target.documentElement.scrolHeight
+    //         const currentHeight = e.target.documentElement.scrollTop + window.innerHeight
+    //         if (currentHeight + 1 >= scrolHeight) {
+    //             setOffSet(offset + 10)
+    //         }
+    //     }
+    //     window.addEventListener('load', handleScroll)
+    //     return () => window.removeEventListener('load')
+    // }, [])
 
 
     return (

@@ -1,13 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { Input, Select } from 'antd';
+import { Input} from 'antd';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import SosialLInks from './SosialLInks';
 import Logo from '../../../assets/img/Logo/logo.png'
 
-const handleChange = (value) => {
-  console.log(`selected ${value}`);
-};
 
 const Footer2 = () => {
 

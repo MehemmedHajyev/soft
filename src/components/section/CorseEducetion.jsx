@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 
 import axios from 'axios'
 
 
 const CorseEducetion = () => {
     
-    const { slug } = useParams()
     const BASE_URL = `https://api.softwarevillage.az/api/core/education-section`;
 
 
@@ -21,7 +20,7 @@ const CorseEducetion = () => {
 
     useEffect(() => {
         getCourseDetail()
-    }, [])
+    }, [getCourseDetail])
 
     
     return (

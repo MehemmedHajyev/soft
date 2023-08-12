@@ -1,9 +1,8 @@
 
-import { Link, useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import BredCramp from '../../section/BredCramp/BredCramp'
-import BlogDetailsBredCramp from './BlogDetailsBredCramp'
 import BlogSectionOne from './BlogSectionOne'
 import BlogSectionTwo from './BlogSectionTwo'
 import BlogSectionThere from './BlogSectionThere'

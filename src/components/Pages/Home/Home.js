@@ -8,10 +8,8 @@ import AboutWe from './AboutWe'
 import BloqContent from '../../section/blog-content/BloqContent';
 
 import TeamSliderItems from '../../section/TeamSliderItems'
-import PartniyorSlider from '../../Sliders/PartniyorSlider'
 import Partniyorlar from '../../section/Partniyorlar'
-import Counter from '../../Layout/Counter/Counter'
-const Home = (traningText) => {
+const Home = () => {
     return (
         <>
             <MainCarusel />
@@ -23,7 +21,6 @@ const Home = (traningText) => {
             <TeamSliderItems />
             <BloqContent />
             < Partniyorlar />
-            {/* <Counter /> */}
 
 
 

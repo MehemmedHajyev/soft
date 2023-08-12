@@ -1,5 +1,4 @@
 import React from 'react'
-import imgAbout from '../../assets/img/home-in-about-img/image.png';
 import { Link } from "react-router-dom";
 import axios from 'axios'
 import { useEffect, useState } from 'react'
@@ -24,7 +23,7 @@ const HomeAbout = () => {
 
     useEffect(() => {
         gethomeAbout()
-    }, [])
+    }, [gethomeAbout])
     return (
         <div className='homeAbout'>
             <h3>{homeAbout?.title}</h3>

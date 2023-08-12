@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import Accordion from '../../section/Test/Acardion';
-import img1 from '../../../assets/img/header-imgs/about-bcg.png'
-import BredCramp from '../../section/BredCramp/BredCramp'
 import axios from 'axios';
 import QuastionHeader from './QuastionHeader';
 import Partniyorlar from '../../section/Partniyorlar';

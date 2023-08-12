@@ -1,6 +1,5 @@
 import React from 'react'
 import BredCramp from '../../section/BredCramp/BredCramp'
-import img1 from '../../../assets/img/header-imgs/about-bcg.png'
 import axios from 'axios'
 import { useEffect, useState } from 'react'
 

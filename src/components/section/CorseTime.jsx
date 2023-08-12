@@ -1,13 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import { Link, useParams } from 'react-router-dom'
 
 import axios from 'axios'
-import Item from 'antd/es/list/Item'
 
 const CorseTime = () => {
 
-    const { slug } = useParams()
-    // const BASE_URL = `https://api.softwarevillage.az/api/course/${slug}`;
     const BASE_URL = `https://api.softwarevillage.az/api/course`;
 
 
@@ -22,7 +18,7 @@ const CorseTime = () => {
 
     useEffect(() => {
         getCourseDetail()
-    }, [])
+    }, [ getCourseDetail])
     return (
         <div className="corse-time-main">
             <div className='corse-time'>
@@ -32,7 +28,6 @@ const CorseTime = () => {
                     <div className="corse-time-svg">
                    
 
-                    {/* <img src={`https://api.softwarevillage.az${item?.image}`} alt="" /> */}
 
                     </div>
                     <div className="corse-time-title">

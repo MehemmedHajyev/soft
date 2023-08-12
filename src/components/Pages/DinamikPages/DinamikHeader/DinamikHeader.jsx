@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import { useNavigate } from 'react-router-dom/dist';
-import svgss from '../../../../assets/img/Logo/svgss.png'
 const DinamikHeader = ({ data }) => {
   const navigate = useNavigate();
 
@@ -10,9 +9,7 @@ const DinamikHeader = ({ data }) => {
     return `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`;
   };
 
-  const rout = (() => {
-    navigate("muraciyyet-et");
-  });
+ 
 
   return (
     <div>

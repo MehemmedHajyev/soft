@@ -1,7 +1,6 @@
-import img from '../../assets/img/card-img/M3_integrations_all_integrations.png.png'
 
 import React, { useEffect, useState } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 
 import axios from 'axios'
 
@@ -22,7 +21,7 @@ const CorseInformation = () => {
 
     useEffect(() => {
         getCourseDetail()
-    }, [])
+    }, [ getCourseDetail])
 
     return (
         <div className='corse-information-container'>
