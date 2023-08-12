@@ -73,7 +73,6 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    /* text-fill-color: transparent; */
 }
 
 
@@ -187,15 +186,6 @@ body {
 .main-carusel {
     position: relative;
 }
-
-/* .traainig-container .slick-slide.slick-active.slick-current {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
-
-
-
 .center-mood-slider .slick-slide.slick-active.slick-current {
     display: flex;
     align-items: center;
@@ -668,17 +658,6 @@ body {
 }
 
 
-/* .btn-hover-active {
-    opacity: 0;
-    transition: all 1s;
-
-}
-
-.home-about-content-grid-card-button:hover .btn-hover-active {
-    opacity: 1;
-
-
-} */
 
 /* ////////// haqqimizda Home End */
 
@@ -713,16 +692,6 @@ body {
     margin-left: auto;
     margin-top: 50px;
 }
-
-/* .sld-item {
-    width: 300px;
-    height: 300px;
-    background: green;
-} */
-
-
-
-
 .center-mood-slider-information {
     width: 276px;
     height: 74px;
@@ -732,12 +701,8 @@ body {
     position: absolute;
     bottom: 10px;
     text-align: center;
-
     padding: 10px;
-
 }
-
-
 .center-mood-slider-information h1 {
     font-family: Mulish;
     font-size: 22px;
@@ -750,16 +715,12 @@ body {
 }
 
 .center-mood-slider-information p {
-    font-family: Mulish;
     font-size: 20px;
     font-weight: 400;
     line-height: 25px;
     letter-spacing: 0em;
     text-align: center;
-
 }
-
-
 .center-mood-slider .item {
     width: 338px !important;
     height: 250px;
@@ -773,25 +734,16 @@ body {
     background: var(--text-color-white-ag, #FFF);
     border-radius: 10px;
 }
-
-
-
-
 .center-mood-slider .slick-track {
     margin-top: 100px;
 }
-
 .center-mood-slider .slick-current+* .item {
     width: 338px;
     height: 300px;
-
 }
-
 .center-mood-slider .item {
     position: relative;
 }
-
-
 .item-inner-images {
     position: absolute;
     top: -50px;
@@ -812,18 +764,6 @@ body {
     aspect-ratio: 1/1;
     border-radius: 50%;
 }
-
-/* .item-inner-images::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border-radius: 50%;
-    background-image: linear-gradient(90deg, #5CBEDB 4.71%, #FFC801 59.61%);
-} */
-
 .item {
     padding: 20px;
 }
@@ -1050,11 +990,7 @@ body {
     height: 203px;
 }
 
-/* .about-header-content-for-dinamik-item-for-images {
-    width: 100%;
-    height: 100%;
 
-} */
 
 
 .image-img {
@@ -3659,20 +3595,15 @@ nav {
     margin-top: 50px;
 }
 
-/* .teaching-container-content-card-just-name-infarmation{
-    dis
-} */
+
 
 .teaching-container-content-card-title-des p {
     color: #000;
-
-    /* Subtitle/S2-R */
     font-family: Euclid Circular A;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
-    /* 142.857% */
 }
 
 .for-images-teacing img {
@@ -4447,20 +4378,6 @@ nav {
 
 
 @media only screen and (max-width:550px) {
-
-
-    /* .slick-current .main-carusel-image {
-        top: 13%;
-        right: -2%;
-        opacity: 1;
-        z-index: 99;
-        display: flex;
-        align-items: inherit;
-        margin-top: 70px;
-        justify-content: center;
-        width: 250px;
-    } */
-
     .about-header,
     .bred-cram-details {
         height: 50vh;
@@ -4614,29 +4531,7 @@ nav {
     .water-container-content {
         position: absolute;
         top: 700px;
-    }
-
-    /* .footer-search-container {
-        margin-top: 33px;
-        margin-bottom: 40px;
-        border-radius: 23.25px;
-        border: 1px solid #4E4E50;
-        background: #FFF;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 10px 20px;
-        gap: 20px;
-    } */
-
-    /* .footer-search-container button {
-        color: #FFF;
-        font-size: 14px;
-        font-family: Mulish;
-        padding: 4px 20px;
-
-    } */
-
+    }   
     .coppy-right-container-content,
     .content-infotmation {
         flex-direction: column;
@@ -4780,13 +4675,6 @@ nav {
         font-size: 18px;
         line-height: 5px;
     }
-
-    /* .about-header-come-back-buttons {
-        top: 15px;
-        left: 20px;
-    } */
-
-
     .team-slider .item p {
         font-family: Euclid Circular A;
         font-style: normal;

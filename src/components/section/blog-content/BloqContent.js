@@ -15,7 +15,6 @@ const BloqContent = () => {
         
     }, [])
 
-
     return (
         <div>
          <div className='blog-grid-container'>

@@ -1,41 +1,40 @@
-
-import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
-
-import axios from 'axios'
-import { useCallback } from 'react'
+import React, { useEffect, useState, useCallback } from 'react';
+import { useParams } from 'react-router-dom';
+import axios from 'axios';
 
 const CorseInformation = () => {
-
-    const { slug } = useParams()
+    const { slug } = useParams();
     const BASE_URL = `https://api.softwarevillage.az/api/course/${slug}`;
 
-
-    const [courseDetail, setCourseDetail] = useState([])
+    const [courseDetail, setCourseDetail] = useState([]);
 
     const getCourseDetail = useCallback(async () => {
-        const res = await axios.get(BASE_URL);
-        const data = await res.data;
-        setCourseDetail(data);
-    }, []);
+        try {
+            const res = await axios.get(BASE_URL);
+            const data = res.data;  // You don't need to await here
+            setCourseDetail(data);
+        } catch (error) {
+            console.error('Error fetching course details:', error);
+        }
+    }, [BASE_URL]);
+
     console.log(courseDetail);
 
     useEffect(() => {
-        getCourseDetail()
-    }, [ getCourseDetail])
+        getCourseDetail();
+    }, [getCourseDetail]);
 
     return (
         <div className='corse-information-container'>
             <div className="corse-information-card">
-                <img src={`https://api.softwarevillage.az${courseDetail?.image_2}`} alt="" />
+                <img src={`https://api.softwarevillage.az${courseDetail?.image_2}`} alt="Course Image"/>
             </div>
 
-
             <div className="corse-information-card">
-                <div className="corse-information-card-conten">
+                <div className="corse-information-card-content">
                     <h1>{courseDetail?.title} təlimində nə öyrənəcəksiniz?</h1>
 
-                    <ul className="corese-infarmetion">
+                    <ul className="course-information">
                         {courseDetail.properties?.map((item, index) => (
                             <li key={index} className='i'>
                                 <svg
@@ -58,17 +57,12 @@ const CorseInformation = () => {
                                 {item.name}
                             </li>
                         ))}
-
-                        <button className='corese-infarmetion-btn' href="#" >Muraciyet et</button>
+                        <button className='course-information-btn' href="#">Muraciyet et</button>
                     </ul>
                 </div>
-
-
-
             </div>
-
         </div>
-    )
-}
+    );
+};
 
-export default CorseInformation
+export default CorseInformation;
