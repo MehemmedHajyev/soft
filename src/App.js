@@ -16,12 +16,12 @@ function App() {
   return (
     <>
      {/* <BrowserRouter>
-      <Layout>
-        <ScrollToTop />
-        <Routing /> 
-      </Layout>
-      </BrowserRouter>       */}
+      <Layout> */}
+        {/* <ScrollToTop /> */}
+        {/* <Routing />  */}
       <TemirPage />
+      {/* </Layout>
+      </BrowserRouter>       */}
     </>
   );
 }
