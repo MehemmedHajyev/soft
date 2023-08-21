@@ -9,17 +9,19 @@ import './assets/Css/global.css';
 import Routing from "./components/Layout/Routing/Routing";
 import { BrowserRouter } from "react-router-dom";
 import ScrollToTop from './components/Layout/Routing/ScrollTop';
+import TemirPage from "./components/Pages/Temir/TemirPage";
 
 function App() {  
 
   return (
     <>
-     <BrowserRouter>
+     {/* <BrowserRouter>
       <Layout>
         <ScrollToTop />
         <Routing /> 
       </Layout>
-      </BrowserRouter>      
+      </BrowserRouter>       */}
+      <TemirPage />
     </>
   );
 }
