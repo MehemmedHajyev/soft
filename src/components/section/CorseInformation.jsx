@@ -18,7 +18,7 @@ const CorseInformation = () => {
         }
     }, [BASE_URL]);
 
-    console.log(courseDetail);
+    // console.log(courseDetail);
 
     useEffect(() => {
         getCourseDetail();

@@ -2,6 +2,7 @@ import Link from 'antd/es/typography/Link'
 import React from 'react'
 import Partniyorlar from '../../section/Partniyorlar'
 import MuraciyyetForm from './MuraciyyetForm'
+import img from '../../../assets/img/Logo/muraciyyet et.png'
 
 
 
@@ -12,7 +13,7 @@ const MuraciyyetED = () => {
 
                 <div className="muraciyyet-header">
                     <div className="swhadow-muraciyyet">
-                        {/* <img src={img} alt="" className='muraciyyet-img' /> */}
+                        <img src={img} alt="" className='muraciyyet-img' />
                         <div className="shadow-for-muraciyyet-img">
                             <div className="muraciyyet-link">
                                 <p className=''>

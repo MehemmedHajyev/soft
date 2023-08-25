@@ -11,8 +11,8 @@ const WhyWe2 = () => {
         const res = await axios(BASE_URL)
         const data = await res.data
         setwhyWe(data)
+        // console.log(data,'mehhemmed');
     }
-    // console.log(whyWe,'whyWe ');
 
     useEffect(() => {
         getWhyWe()
@@ -23,7 +23,7 @@ const WhyWe2 = () => {
         <div className="why-we-container-main">
             <div className='why-we-container'>
                 {
-                    whyWe.map((index,item) => (
+                    whyWe.map((item,index) => (
                         <div key={index} className="why-we-item-content">
                             <div className="why-we-item-icon">
                                 <img src={`https://api.softwarevillage.az${item.image}`} alt="" />

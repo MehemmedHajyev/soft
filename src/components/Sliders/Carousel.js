@@ -13,7 +13,7 @@ const Carousel = ({className, children}) => {
         touchThreshold: 190,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 2500,
 
        

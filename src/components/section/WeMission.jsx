@@ -10,7 +10,7 @@ const WeMission = () => {
         const data = await res.data
         setMissions(data)
     }
-    console.log(missions,'missions');
+    // console.log(missions,'missions');
 
     useEffect(() => {
         getMissons()

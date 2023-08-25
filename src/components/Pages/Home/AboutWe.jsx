@@ -13,7 +13,7 @@ const AboutWe = () => {
             const data = await res.data;
 
             // Log the data before conversion
-            console.log("Data before conversion:", data);
+            // console.log("Data before conversion:", data);
 
             // Convert the number from string to number type
             const digitsWithData = data.map(item => ({
@@ -22,7 +22,7 @@ const AboutWe = () => {
             }));
 
             // Log the data after conversion
-            console.log("Data after conversion:", digitsWithData);
+            // console.log("Data after conversion:", digitsWithData);
 
             setDigits(digitsWithData);
         } catch (error) {
@@ -38,18 +38,18 @@ const AboutWe = () => {
 
     return (
         <div className='about-we-home'>
-            <div className="about-we-home-content">
-                {digits.map((item, index) => (
-                    <CountComp
-                        key={item.id}
-                        item={item}
-                        countValue={item?.number}
-                        count={item?.number > 400 ? item?.number - 100 : 0}
-                    />
-                ))}
-
-            </div>
+        <div className="about-we-home-content">
+            {digits.map((item, index) => (
+                <CountComp
+                    key={index}
+                    item={item}
+                    countValue={item?.number}
+                    count={item?.number > 400 ? item?.number - 100 : 0}
+                />
+            ))}
         </div>
+    </div>
+
     );
 };
 

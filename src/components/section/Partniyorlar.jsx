@@ -14,7 +14,7 @@ const Partniyorlar = () => {
         const data = await res.data
         setpartnyor(data)
     }
-    console.log(partnyor, 'partniyorlar');
+    // console.log(partnyor, 'partniyorlar');
 
     useEffect(() => {
         getpartnyor()
@@ -30,16 +30,12 @@ const Partniyorlar = () => {
                 <h1>Akademik Partnyorlarımız</h1>
                 <p>Qlobal standartlara uyğun tədris imkanları sayəsində tələbələrimizidünyanın istənilən yerində professionallıqlarını sübut edə biləcəkşəkildə hazırlaşdırırıq.</p>
             </div>
-            <PartniyorSlider className='partniyorlar-slider-container' >
-                {
-                    partnyor.map((index,item) => (
-                        <div key={index} className='partniyorlar-slider-item'>
-                            <img src={`https://api.softwarevillage.az${item.image}`} alt={item.name} />
-                        </div>
-                    ))
-
-                }
-
+            <PartniyorSlider className='partniyorlar-slider-container' data={partnyor}>
+                {partnyor.map((item, index) => (
+                    <div key={index} className='partniyorlar-slider-item'>
+                        <img src={`https://api.softwarevillage.az${item.image}`} alt={item.name} />
+                    </div>
+                ))}
             </PartniyorSlider>
         </>
 

@@ -17,7 +17,7 @@ const WhyWe = () => {
       const data = await res.data
       setaboutContent(data)
     }
-    console.log(aboutContent, "aboutcontent");
+    // console.log(aboutContent, "aboutcontent");
   
     useEffect(() => {
       getaboutContent()

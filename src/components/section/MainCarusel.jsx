@@ -25,12 +25,12 @@ const MainCarusel = () => {
             // Work with the response...
         } catch (err) {
             // Handle error
-            console.log(err);
+            // console.log(err);
         }
 
 
     }
-    console.log(mainSlider, 'testt');
+    // console.log(mainSlider, 'testt');
 
     useEffect(() => {
         getMainSlider()

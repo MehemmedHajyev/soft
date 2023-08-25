@@ -19,7 +19,7 @@ const Corse = (traningText) => {
       const data = await res.data
       setCorseContent(data)
   }
-  console.log(corseContent, 'corseContent ');
+  // console.log(corseContent, 'corseContent ');
 
   useEffect(() => {
     getcorseContent()

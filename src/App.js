@@ -15,13 +15,13 @@ function App() {
 
   return (
     <>
-     {/* <BrowserRouter>
+     <BrowserRouter>
       <Layout>
         <ScrollToTop />
         <Routing /> 
       </Layout>
-      </BrowserRouter>       */}
-      <TemirPage />
+      </BrowserRouter>      
+      {/* <TemirPage /> */}
     </>
   );
 }

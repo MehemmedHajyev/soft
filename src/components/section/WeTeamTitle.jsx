@@ -18,7 +18,7 @@ const WeTeamTitle = () => {
     }, [])
 
 
-    console.log(weTeam, 'staf');
+    // console.log(weTeam, 'staf');
   return (
 
     <div className='center-mood-title-and-desc'>

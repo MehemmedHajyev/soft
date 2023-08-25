@@ -12,13 +12,15 @@ function Navbar() {
     return (
         <div className="header-for-nav">
             <nav ref={navRef} className="mmmmmm">
-                <Link onClick={() => showNavbar()} to="telimproqramlari"><a className="item-link">Təlim proqramları</a></Link>
-                <Link onClick={() => showNavbar()} to="haqqimizda"><a className="item-link">Haqqımızda</a></Link>
-                <Link onClick={() => showNavbar()} to="suallar"><a className="item-link">Suallar</a></Link>
-                <Link onClick={() => showNavbar()} to="bloq"><a className="item-link">Bloq</a></Link>
-                <Link onClick={() => showNavbar()} to="elaqe"><a className="item-link">Əlaqə</a></Link>
+                <Link className="item-link" onClick={() => showNavbar()} to="telimproqramlari">Təlim proqramları</Link>
+                <Link className="item-link" onClick={() => showNavbar()} to="haqqimizda">Haqqımızda</Link>
+                <Link className="item-link" onClick={() => showNavbar()} to="suallar">Suallar</Link>
+                <Link className="item-link" onClick={() => showNavbar()} to="bloq">Bloq</Link>
+                <Link className="item-link" onClick={() => showNavbar()} to="elaqe">Əlaqə</Link>
 
-             
+
+
+
                 <div className="search-buttons" id="for-responsive-button">
                     <div className="button-container">
 
@@ -37,7 +39,6 @@ function Navbar() {
                     <div className="close-container-x">
                         <span className="close-x">x</span>
                     </div>
-
                 </button>
             </nav>
 
@@ -46,16 +47,7 @@ function Navbar() {
                 onClick={showNavbar}>
                 <i className="fa fa-solid fa-bars"></i>
             </button>
-            <div className="search-buttons" id="for-dekstop">
-                    <div className="button-container">
 
-                        <Link to="muraciyyet-et" onClick={() => showNavbar()}>
-                            <button> Müraciət et</button>
-                        </Link>
-
-
-                    </div>
-                </div>
         </div>
     );
 }

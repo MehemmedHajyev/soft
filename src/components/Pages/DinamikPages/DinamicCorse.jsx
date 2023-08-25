@@ -21,12 +21,12 @@ const DinamicCorse = () => {
     await axios.get(`https://api.softwarevillage.az/api/course/${slug}`)
     .then((res) => {
       setData(res?.data)
-      console.log(res?.data)
+      // console.log(res?.data)
     }).catch((err) => {
 
     })
   }
-  console.log(data.teacher);
+  // console.log(data.teacher);
   
   useEffect(() => {
     

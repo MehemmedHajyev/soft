@@ -3,9 +3,8 @@ import axios from 'axios'
 import TelimProqramHome from './TelimProqramHome'
 
 
-const TelimProqramlariMain = ({ products }) => {
+const TelimProqramlariMain = () => {
 
-    
 
 const [data, setData] = useState([])
 

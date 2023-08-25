@@ -12,7 +12,7 @@ const PartniyorSlider = ({className, children}) => {
         arrows: false,
         infinite: true,
         speed: 500,
-        slidesToShow: 6,
+        slidesToShow: 4,
         slidesToScroll: 1,
         initialSlide: 0,
         autoplay: true,

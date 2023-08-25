@@ -11,8 +11,8 @@ const Map = () => {
         const data = await res.data
         setContactMap(data)
     }
-    console.log(contactMap, 'mapdi');
-    console.log(contactMap.map);
+    // console.log(contactMap, 'mapdi');
+    // console.log(contactMap.map);
 
     useEffect(() => {
         getContactMap()

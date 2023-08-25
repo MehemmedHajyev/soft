@@ -39,7 +39,7 @@ const MuraciyyetForm = () => {
         course: option.id
       }
 
-      console.log(formData);
+      // console.log(formData);
       await axios.post('https://api.softwarevillage.az/api/course-apply', formData);
       message.success('Mesaj uğurla gönderildi!');
       // setModalVisible(true);
@@ -72,6 +72,8 @@ const MuraciyyetForm = () => {
         <div className="form-field">
           <label htmlFor="name">Ad</label>
           <Input
+               style={{ marginTop: '7px' }}
+
             className={`inp ${failedFields.includes('name') ? 'red-border' : ''}`}
             placeholder="Ad"
             type="text"
@@ -85,6 +87,8 @@ const MuraciyyetForm = () => {
         <div className="form-field">
           <label htmlFor="email">Email</label>
           <Input
+               style={{ marginTop: '7px' }}
+
             className={`inp ${failedFields.includes('email') ? 'red-border' : ''}`}
             placeholder="Daxil edin"
             type="text"
@@ -94,31 +98,43 @@ const MuraciyyetForm = () => {
           />
           {failedFields.includes('email') && <span className="error-message">Bu alan zorunludur.</span>}
         </div>
+
+
+     
+<div className="form-field">
+  <label htmlFor="phone">Mobil nömrə</label>
+  <Input
+     style={{ marginTop: '7px' }}
+    className={`inp ${failedFields.includes('phone') ? 'red-border' : ''}`}
+    placeholder="Mobil nömrə"
+    type="tel"
+    id="phone"
+    value={phoneUser === '' ? '+994' : phoneUser}
+    onChange={(e) => {
+      const formattedNumber = e.target.value.replace(/[^0-9+]/g, ''); // Sadece rakamları ve + sembolünü al
+      setPhone(formattedNumber);
+    }}
+  />
+  {failedFields.includes('phone') && <span className="error-message">Bu alan zorunludur.</span>}
+</div>
+
+
+
+
+
+
+
+
         <SelectOption
           options={options}
           selectedOption={selectedOptionId}
           setSelectedOption={setSelectedOptionId}
           failedFields={failedFields}
         />
-
-        <div className="form-field">
-          <label htmlFor="phone">Mobil nömrə</label>
-          <Input
-            className={`inp ${failedFields.includes('phone') ? 'red-border' : ''}`}
-            placeholder="Mobil nömrə"
-            type="number"
-            id="phone"
-            value={phoneUser}
-            onChange={(e) => setPhone(e.target.value)}
-          />
-          {failedFields.includes('phone') && <span className="error-message">Bu alan zorunludur.</span>}
-        </div>
-
         <Button
           type="primary"
           htmlType="submit"
           className="send-muraciyyet-btn"
-          style={{ backgroundColor: 'green', borderColor: 'green' }}
         >
           Müraciət et
         </Button>

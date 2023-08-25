@@ -46,7 +46,7 @@ const TeamSlider = ({className, children}) => {
       };
 
     return ( 
-        <div className="w-100">
+        <div className="w-100-student">
             <Slider {...settings} className={`w-100 head-slider slick-dots-style ${className ? className : ''}`}>{children}</Slider>
         </div> 
     )    

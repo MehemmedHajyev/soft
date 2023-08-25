@@ -5,7 +5,7 @@ export class CountComp extends Component {
         count:0
     }
     componentDidMount(){
-        console.log("did mount", this.props.countValue)
+        // console.log("did mount", this.props.countValue)
         this.setState({count:this.props.count})
        let int = setInterval(()=>{
         if(this.state.count < this.props.countValue){

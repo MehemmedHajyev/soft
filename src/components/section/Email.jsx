@@ -14,7 +14,7 @@ export const Email = () => {
         const data = await res.data
         setemail(data)
     }
-    console.log(email, 'about ');
+    // console.log(email, 'about ');
 
     useEffect(() => {
         getemail()

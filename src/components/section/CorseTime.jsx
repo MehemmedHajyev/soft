@@ -14,7 +14,7 @@ const CorseTime = () => {
         const data = await res.data
         setCourseDetail(data)
     }
-    console.log(courseDetail);
+    // console.log(courseDetail);
 
     useEffect(() => {
         getCourseDetail()

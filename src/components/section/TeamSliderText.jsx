@@ -11,7 +11,6 @@ const TeamSliderText = () => {
         const data = await res.data
         setStudents(data)
     }
-    console.log({ students });
     useEffect(() => {
         getStudents()
     }, [])

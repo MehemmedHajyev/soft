@@ -2,10 +2,19 @@ import Nav1 from './Nav/Nav1'
 import { Link } from "react-router-dom";
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
+import { useRef } from 'react';
 
 
 
 const Header = () => {
+    // const navRef = useRef();
+
+
+    // const showNavbar = () => {
+    //     navRef.current.classList.toggle(
+    //         "responsive_nav"
+    //     );
+    // };
 
     const BASE_URL = 'https://api.softwarevillage.az/api/core/main_data';
 
@@ -17,7 +26,7 @@ const Header = () => {
         const data = await res.data
         setaboutContent(data)
     }
-    console.log(aboutContent, "aboutcontent");
+    // console.log(aboutContent, "aboutcontent");
 
     useEffect(() => {
         getaboutContent()
@@ -36,6 +45,16 @@ const Header = () => {
                         </Link>
                     </div>
                     <Nav1 />
+                    <div className="search-buttons" id="for-dekstop">
+                    <div className="button-container">
+
+                        <Link to="muraciyyet-et">
+                            <button> Müraciət et</button>
+                        </Link>
+
+
+                    </div>
+                </div>
                 </div>
 
 
