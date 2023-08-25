@@ -39,7 +39,7 @@ export const Email = () => {
 
                         {
 
-                            email?.map((index,item) => (
+                            email?.map((item,index) => (
 
 
                                 <p key={index}>{item.email}</p>

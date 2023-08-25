@@ -38,7 +38,7 @@ export const WhatsappCard = () => {
 
                         {
 
-                            whatsapp?.map((index,item) => (
+                            whatsapp?.map((item,index) => (
 
 
                                 <p key={index}>{item.wp_number}</p>

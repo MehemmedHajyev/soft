@@ -34,33 +34,6 @@ const CorseEducetion = () => {
 
 
             <div className="corse-education-card card-in-container">
-                {/* {courseDetail.items?.map((item, index) => {
-                        if(index % 2 === 0){
-                            
-                            return (<div className="card-in-card mrt">
-                                <div className="card-in-card-img">
-                                    <img src={`https://api.softwarevillage.az${item?.image}`} alt="" />
-                                </div>
-                                <div className="card-in-card-content">
-                                    <h1>{item?.title}</h1>
-                                    <p>{item?.description}</p>
-                                </div>
-
-
-                            </div>)
-                        }else{
-                            return (<div className="card-in-card">
-                                <div className="card-in-card-img">
-                                    <img src={`https://api.softwarevillage.az${item?.image}`} alt="" />
-                                </div>
-                                <div className="card-in-card-content">
-                                    <h1>{item?.title}</h1>
-                                    <p>{item?.description}</p>
-                                </div>
-
-                            </div>)
-                        }
-                    })} */}
                 {courseDetail.items?.map((item, index) => (
                     <div
                         key={index}

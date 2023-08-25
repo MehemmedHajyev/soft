@@ -19,8 +19,6 @@ const Contact = () => {
     const data = await res.data
     setaboutContent(data)
   }
-  // console.log(aboutContent, "aboutcontent");
-
   useEffect(() => {
     getaboutContent()
   }, [])
@@ -31,7 +29,7 @@ const Contact = () => {
     <>
       <BredCramp 
       
-      title={aboutContent.title}  
+      title={aboutContent?.title}  
       inPage={aboutContent?.title}
     
       text={aboutContent?.description} 

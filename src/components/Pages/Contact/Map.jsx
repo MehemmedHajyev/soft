@@ -26,10 +26,10 @@ const Map = () => {
                 {`${contactMap.map}`}
                 
                 
-                    allowfullscreen=""
+                    allowFullscreen=""
                     loading="lazy"
                     title="map"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    referrerPolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </>
     )
