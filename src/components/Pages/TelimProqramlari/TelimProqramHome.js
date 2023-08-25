@@ -15,7 +15,6 @@ const TelimProqramHome = () => {
         const data = await res.data
         setaboutContent(data)
     }
-    // console.log(aboutContent, "aboutcontent");
 
     useEffect(() => {
         getaboutContent()

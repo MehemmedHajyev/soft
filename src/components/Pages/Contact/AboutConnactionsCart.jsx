@@ -37,7 +37,7 @@ const AboutConnactionsCart = () => {
                     <div className='aboutConnactionsCart-content-desc'>
                         <h4>Əlaqə nömrəsi</h4>
                         {phone?.map((item,index) => (
-                            <p key={index}>{item}</p>
+                            <p key={index}>{item?.phone}</p>
                         ))}
 
                     </div>
